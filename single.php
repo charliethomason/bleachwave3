@@ -1,0 +1,31 @@
+<?php get_header(); ?>
+
+<div class="blog reg-blog">
+	<?php if(have_posts()) : ?>
+	<?php while(have_posts()) : the_post(); ?>
+        
+		<article class="post">
+       		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+			<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong> &#8226; <?php the_category(', '); ?></p>
+           
+			<div class="entry">  
+				<?php the_content(); ?>
+				<div class="clear"></div>
+           	</div><!-- div.entry -->
+
+		</article><!-- article.post -->
+
+		<p class="taglist"><?php the_tags(); ?></p>
+
+	<?php endwhile; ?>
+    
+	<div class="navigation"> 
+	    <div class="prev-post"><?php previous_post_link( 'Previous: %link' ) ?></div>
+		<div class="next-post"><?php next_post_link( 'Next: %link' ) ?></div>
+		<div class="clear"></div>
+	</div>
+
+	<?php endif; ?>
+</div>
+ 
+<?php get_footer(); ?>
