@@ -593,6 +593,10 @@ ul.nav-social a:hover {
 	display:none;
 }
 
+#intro-contact ul {
+	margin-left:88px;
+}
+
 #intro-contact ul:after {
 	clear:left;
 }
@@ -604,7 +608,48 @@ ul.nav-social a:hover {
 #intro-contact .contact-btn {
 	display:block;
 	float:left;
-} 
+	font-size:0;
+	height:56px;
+	line-height:0;
+	text-indent:-9999px;
+	width:56px;
+}
+
+#intro-contact .contact-btn:hover span {
+	background-color: #000;
+	color:#fff;
+	display:block;
+	font-size:11px;
+	font-weight:bold;
+	line-height:1.3em;
+	position:relative;
+	text-align:center;
+	text-indent:0;
+	top:56px;
+}
+
+#intro-contact .contact-btn:hover span:before {
+	border-bottom:7px solid #000;
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+	content: "";
+	display:inline-block;
+	left:19px;
+	position:absolute;
+	top:-7px;
+}	
+
+li#contact-form a.contact-btn {
+	background:url("images/icon-mail01.png") no-repeat scroll 0 0 transparent;
+}
+
+li#contact-twitter a.contact-btn {
+	background:url("images/icon-twitter04.png") no-repeat scroll 0 0 transparent;
+}
+
+li#contact-linkedin a.contact-btn {
+	background:url("images/icon-linkedin01.png") no-repeat scroll 0 0 transparent;
+}
 
 #intro-contact-btn.clicked {
 	background: #96c421; /* Old browsers */
@@ -626,77 +671,9 @@ ul.nav-social a:hover {
 	max-width:960px;
 }
 
-h2.home-head {
-	text-align:left;
-	-webkit-box-shadow:0 1px 3px #000000;
-	-moz-box-shadow:0 1px 3px #000000;
-	box-shadow:0 1px 3px #000000;
-}
-
 .home-section {
 	padding:0 0 20px;
 	position:relative;
-}
-
-.slide-wrapper {
-	height:245px;
-	margin:40px auto 20px;
-	width:960px;
-	overflow:hidden;
-	position:relative;
-}
-
-#webdev-slider {
-	height:245px;
-	left:0;
-	position:relative;
-	width:2880px;
-}
-
-.slide {
-	float:left;
-	width:960px;
-}
-
-a.webdev-thumb {
-	float:left;
-}
-
-.webdev-meta {
-	float:right;
-	margin-left:10px;
-	width:600px;
-}
-
-.webdev-excerpt p {
-	line-height: 1.25em;
-	padding:5px 0;
-}
-
-.es-nav span {
-	position:absolute;
-	top:50%;
-	left:1%;
-	background:transparent url('images/nav03.png') no-repeat top left;
-	width:37px;
-	height:37px;
-	margin-top:-13px;
-	text-indent:-9000px;
-	cursor:pointer;
-}
-
-.es-nav span:hover {
-	background-position:bottom left;
-}
-
-.es-nav span.es-nav-next {
-	right:1%;
-	left:auto;
-	background-position:top right;
-}
-
-.es-nav span.es-nav-next:hover {
-	background-position:bottom right;
 }
 
 #home-art {
@@ -711,6 +688,13 @@ a.webdev-thumb {
 
 #home-art h2 {
 	margin:0;
+}
+
+h2.home-head {
+	text-align:left;
+	-webkit-box-shadow:0 1px 3px #000000;
+	-moz-box-shadow:0 1px 3px #000000;
+	box-shadow:0 1px 3px #000000;
 }
 
 h2.home-head a {
@@ -790,11 +774,12 @@ h2.home-head a:hover:after {
 
 .art-meta p {
 	display:none;
+	line-height:1.3em;
 }
 
 .art-meta p,
 .art-meta h3 {
-	padding-left:3%;
+	/*padding-left:3%;*/
 	text-align:left;
 }
 

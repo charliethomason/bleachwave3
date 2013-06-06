@@ -17,9 +17,9 @@ Template Name: Homepage
 			</div>
 			<div id="intro-contact">
 				<ul>
-					<li id="contact-form"><a href="/contact" class="contact-btn">Contact Form</a></li>
-					<li id="contact-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" target="_blank">Twitter</a></li>
-					<li id="contact-linkedin"><a href="http://www.linkedin.com/in/charlesthomason/" class="contact-btn" target="_blank">LinkedIn</a></li>
+					<li id="contact-form"><a href="/contact" class="contact-btn"><span>Contact Form</span></a></li>
+					<li id="contact-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" target="_blank"><span>Twitter</span></a></li>
+					<li id="contact-linkedin"><a href="http://www.linkedin.com/in/charlesthomason/" class="contact-btn" target="_blank"><span>LinkedIn</span></a></li>
 				</ul>
 			</div>
 		</div>
