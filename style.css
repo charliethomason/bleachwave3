@@ -833,6 +833,29 @@ h2.home-head a:hover:after {
 	padding:0 0 20px;
 }
 
+#skills-box {
+	max-width:700px;
+}
+
+#skills-box .skills-column {
+	float:left;
+	width:49%;
+}
+
+#skills-box .skills-column.second {
+	float:right;
+}
+
+#skills-box li {
+	font: 1.25em/2em Lora, Georgia, 'Times New Roman', Times, serif;
+	padding:5px 0;
+}
+
+#skills-box li img {
+	padding-right:7px;
+	vertical-align:middle;
+}
+
 /* END About page */
 
 /***********************/
