@@ -20,8 +20,8 @@
 	<?php endwhile; ?>
     
 	<div class="navigation"> 
-	    <div class="prev-post"><?php previous_post_link( 'Previous: %link' ) ?></div>
-		<div class="next-post"><?php next_post_link( 'Next: %link' ) ?></div>
+	    <div class="prev-post"><?php previous_post_link( '%link', '&laquo; %title' ) ?></div>
+		<div class="next-post"><?php next_post_link( '%link', '%title &raquo;' ) ?></div>
 		<div class="clear"></div>
 	</div>
 
