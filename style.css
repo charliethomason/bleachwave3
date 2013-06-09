@@ -789,7 +789,7 @@ h2.home-head a:hover:after {
 }
 
 .art-cell-wrap:hover .art-meta h3 a {
-	color:#135;
+	color:#253B06;
 	text-shadow:none;
 }
 
@@ -1111,7 +1111,7 @@ h1.index-head {
 }
 
 .portfolio-index-item img {
-	border:1px solid #135;
+	border:1px solid #253B06;
 	height:auto !important;
 	max-width:100%;
 	width:auto !important;

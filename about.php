@@ -28,7 +28,7 @@ Template Name: About Page
 	</section>
 
 	<section id="about-skills" class="home-section about-section">
-		<h2 class="home-head about-head"><a href="javascript:void(0)"> Skills &amp; Expertise </a></h2>
+		<h2 class="home-head about-head"><a href="javascript:void(0)"> Web Development Skills </a></h2>
 
 		<div id="skills-box" class="blog">
 			<ul>
