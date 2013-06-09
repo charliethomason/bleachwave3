@@ -856,6 +856,54 @@ h2.home-head a:hover:after {
 	vertical-align:middle;
 }
 
+#about-education {
+	padding-bottom:0;
+}
+
+#education-box {
+	background-color:#fff;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	margin-top:0;
+	-webkit-box-shadow:0 14px 6px 10px #000;
+	-mox-box-shadow:0 14px 6px 10px #000;
+	box-shadow:0 14px 6px 10px #000;
+}
+
+#education-box ul {
+	margin:0 auto;
+	padding:10px 1.1% 20px;
+	text-align:center;
+}
+
+#education-box li {
+	display:inline-block;
+	width:33%;
+}
+
+#education-box h3 a {
+	color:#253B06;
+}
+
+#education-box h3 a:hover {
+	color:#539313;
+}
+
+#education-box h4 {
+	color:#999;
+	font: bold 16px/1.3em Lora, Georgia, 'Times New Roman', Times, serif;
+}
+
+#education-box p {
+	color:#666;
+	font-size:14px;
+	margin:5px 0 0;
+}
+
+#education-box img {
+	max-width:100%;
+}
+
 /* END About page */
 
 /***********************/

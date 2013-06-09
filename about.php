@@ -51,6 +51,46 @@ Template Name: About Page
 		</div>
 
 	</section>
+
+	<section id="about-education" class="home-section about-section">
+		<h2 class="home-head about-head"><a href="javascript:void(0)"> Education </a></h2>
+
+		<div id="education-box" class="blog">
+			<ul>
+				<li>
+					<a href="http://www.uky.edu" target="_blank" rel="nofollow">
+						<img src="<?php bloginfo('template_directory'); ?>/images/ukentucky01.jpg" alt="University of Kentucky logo" border="0" />
+					</a>
+					<h3><a href="http://www.uky.edu" target="_blank" rel="nofollow">University of Kentucky</a></h3>
+					<h4>Bachelor of Fine Arts (BFA)<br> Art Studio</h4>
+					<p>Graduated Dec. 2007, <em>Magna Cum Laude</em></p>
+				</li>
+				<li>
+					<a href="http://www.depaul.edu" target="_blank" rel="nofollow">
+						<img src="<?php bloginfo('template_directory'); ?>/images/depaul01.jpg" alt="DePaul University logo" border="0" />
+					</a>
+					<h3><a href="http://www.depaul.edu" target="_blank" rel="nofollow">DePaul University</a></h3>
+					<h4>Master of Arts (MA)<br> New Media Studies</h4>
+					<p>Graduated May 2010</p>
+				</li>
+				<li>
+					<a href="http://www.starterleague.com" target="_blank" rel="nofollow">
+						<img src="<?php bloginfo('template_directory'); ?>/images/starterleague01.jpg" alt="Starter League logo" border="0" />
+					</a>
+					<h3><a href="http://www.starterleague.com" target="_blank" rel="nofollow">Starter League (aka: Code Academy)</a></h3>
+					<h4>12-week Web App Development program<br> Ruby on Rails, HTML5, CSS3, JS/jQuery</h4>
+					<p>Winter 2012 (Jan-Mar)</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="about-education" class="home-section about-section">
+		<h2 class="home-head about-head"><a href="javascript:void(0)"> Random Facts </a></h2>
+		<div class="blog">
+			&nbsp;
+		</div>
+	</section>
 </div>
 
 <?php get_footer(); ?>
