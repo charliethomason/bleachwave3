@@ -44,6 +44,7 @@
 				<?php if ($shutter != "") { ?>
 					<li><strong>Shutter speed: </strong><?=$shutter?></li>
 				<?php } ?>
+					<li><strong>Tags: </strong><?php the_tags('', ', '); ?></li>
 			</ul>
 			<div class="clear"></div>
 		</section>

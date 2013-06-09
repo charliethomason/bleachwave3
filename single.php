@@ -15,7 +15,7 @@
 
 		</article><!-- article.post -->
 
-		<p class="taglist"><?php the_tags(); ?></p>
+		<p class="taglist"><strong>Tags:</strong><?php the_tags('', ', '); ?></p>
 
 	<?php endwhile; ?>
     
