@@ -904,6 +904,18 @@ h2.home-head a:hover:after {
 	max-width:100%;
 }
 
+.fact {
+	background-color:#fff;
+	color:#000;
+	float:left;
+	line-height:1.5em;
+	margin:10px 1%;
+	padding:10px 1%;
+	width:20.834%; /* 200 / 960 */
+	-webkit-box-shadow:-5px -5px 0 #000;
+	box-shadow:-5px -5px 0 #000;
+}
+
 /* END About page */
 
 /***********************/

@@ -1,17 +1,22 @@
 <?php
-
-// Add jQuery and fancyBox styles & scripts (only jQuery on front page)
-function bleachwave_add_lightbox() {
-	if (is_front_page()) {
-		wp_enqueue_script( 'jquery');
-	} else {
-		wp_enqueue_script( 'jquery' );
-	    wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/inc/lightbox/js/jquery.fancybox.pack.js', array( 'jquery' ), false, true );
-	    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/inc/lightbox/js/lightbox.js', array( 'fancybox' ), false, true );
-	    wp_enqueue_style( 'lightbox-style', get_template_directory_uri() . '/inc/lightbox/css/jquery.fancybox.css' );
-	}
+// Add CSS files
+function bleachwave_add_styles() {
+	wp_enqueue_style( 'style', get_bloginfo('stylesheet_url') );
+	wp_enqueue_style( 'lightbox-style', get_template_directory_uri() . '/inc/lightbox/css/jquery.fancybox.css' );
 }
-add_action( 'wp_enqueue_scripts', 'bleachwave_add_lightbox' );
+add_action( 'wp_enqueue_scripts', 'bleachwave_add_styles' );
+
+// Add JavaScript files
+function bleachwave_add_scripts() {
+	wp_enqueue_script( 'jquery' );
+	if (is_page_template('about.php')) { 
+		wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/jquery.masonry.min.js', array( 'jquery' ), false, true );
+	}
+    wp_enqueue_script( 'bleachwave', get_template_directory_uri() . '/js/bleachwave.js', array( 'jquery' ), false, true );
+    wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/inc/lightbox/js/jquery.fancybox.pack.js', array( 'jquery' ), false, true );
+    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/inc/lightbox/js/lightbox.js', array( 'fancybox' ), false, true );
+}
+add_action( 'wp_enqueue_scripts', 'bleachwave_add_scripts' );
 
 //Add support for WordPress 3.0's custom menus
 add_action( 'init', 'register_my_menu' );

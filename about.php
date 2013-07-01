@@ -85,10 +85,17 @@ Template Name: About Page
 		</div>
 	</section>
 
-	<section id="about-education" class="home-section about-section">
+	<section id="about-facts" class="home-section about-section">
 		<h2 class="home-head about-head"><a href="javascript:void(0)"> Random Facts </a></h2>
-		<div class="blog">
-			&nbsp;
+		<div id="facts-box" class="blog">
+			<div class="fact">I enjoy butter burgers and french fries and milkshakes.</div>
+			<div class="fact">My gun collection includes 45 shotguns made in the USSR in the 1930s.</div>
+			<div class="fact">My favorite movies are Wild Hogs, Glitter, Jersey Girl, Santa Claus Conquers the Martians, and Centipede 2.</div>
+			<div class="fact">At restaurants, I choose not to sit near people of other ethnicities.</div>
+			<div class="fact">There are only 2 types of people in this world: you and me.</div>
+			<div class="fact">Everyone tells me that I look like Woody Harrelson, but the truth is that I look like Joan Rivers if she was a man and had done meth for about 5 years.</div>
+			<div class="fact">Inside of my brain, it's all just like fuckin' naked sluts and bottles of Jack, bro.</div>
+			<div class="fact">I am the enemy.</div>
 		</div>
 	</section>
 </div>

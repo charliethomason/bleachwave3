@@ -6,7 +6,6 @@
 <title><?php bloginfo('name'); ?> <?php wp_title ('|'); ?></title>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon01.ico">
 <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lora:400,400italic,700,700italic|Fjalla+One|Special+Elite'>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); ?>
@@ -14,7 +13,7 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
 <![endif]-->
 </head>
-<body>
+<body <?php body_class(); ?>>
  
 <header id="header">
 	
