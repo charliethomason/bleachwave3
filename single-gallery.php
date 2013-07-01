@@ -13,8 +13,9 @@
 		$fstop = $custom["fstop"][0];
 		$shutter = $custom["shutter"][0];
 	?>
-	<article id="art-page-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="art-page-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong> &#8226; <?php the_category(', '); ?></p>
 			
 		<section class="details-box">
 			<ul id="details-1">
