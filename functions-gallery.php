@@ -51,7 +51,7 @@ function gallery_options(){
 <div id="gallery-options">
 	<p><label>Print URL:</label><input name="print" value="<?php echo $print; ?>" /></p>
 	<p><label>Location:</label><input name="location" value="<?php echo $location; ?>" /></p>
-	<p><label>Medium:</label><input name="medium" value="<?php echo $medium; ?>" /></p>
+	<p><label>Medium:</label><input name="medium" value="<?php echo $medium; ?>" maxlength="80" /></p>
 	<p><label>Camera:</label><input name="camera" value="<?php echo $camera; ?>" /></p>
 	<p><label>Year:</label><input name="year" value="<?php echo $year; ?>" /></p>
 	<p><label>ISO:</label><input name="iso" value="<?php echo $iso; ?>" /></p>
