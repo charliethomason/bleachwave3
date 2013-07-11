@@ -722,6 +722,7 @@ h2.home-head a:hover:after {
 }
 
 .art-cell {
+	cursor:pointer;
 	display:inline-block;
 	letter-spacing: normal;
 	margin-top:-4px;
@@ -766,7 +767,7 @@ h2.home-head a:hover:after {
 	display:none;
 }
 
-.art-cell-meta:hover p {
+.art-cell:hover > .art-cell-meta p {
 	display:block;
 }
 

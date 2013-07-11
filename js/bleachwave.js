@@ -6,6 +6,11 @@ $(document).ready(function() {
 		$("#intro-contact").slideToggle();
 		$(this).toggleClass("clicked");
 	});
+	// Clicking anywhere in art cell container takes you to post URL
+	$(".art-cell").click(function() {
+		var artUrl = $(this).find("a.art-cell-img").attr("href");
+		window.open(artUrl, "_self");
+	});
 	// Add All Posts link to blog menu
 	$("ul.blog-menu").prepend("<li><a href='/blog'>All Posts</a></li>");
 	// Add button class to 'Continue Reading' links

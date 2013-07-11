@@ -42,7 +42,7 @@ Template Name: Homepage
 			$count++;
 		?>
 		<li class="art-cell" id="art-cell-<?=$count;?>">
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+			<a class="art-cell-img" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 			<div class="art-cell-meta">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong><br><em><?=$medium?></em></p>
