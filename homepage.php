@@ -45,9 +45,7 @@ Template Name: Homepage
 			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 			<div class="art-cell-meta">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<?php if($medium != "") { ?>
-					<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong><br><em><?=$medium?></em></p>
-				<?php } ?>
+				<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong><br><em><?=$medium?></em></p>
 				<p><a class="btn blue-btn" href="<?php the_permalink(); ?>">More Info</a></p>
 			</div>
 		</li>
