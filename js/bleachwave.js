@@ -1,14 +1,3 @@
-(function($) {
-	// Take Art Cell img src's and make them the background-image of the container li
-	$(".art-cell-wrap").css("background-image", function() {
-		return 'url(' + $(this).find("img").attr("src") + ')';
-	});
-	// Clicking anywhere in art cell container takes you to post URL
-	$(".art-cell-wrap").click(function() {
-		window.open($(this).find("a.art-cell").attr("href"), "_self");
-	});
-})(jQuery);
-
 var $ = jQuery.noConflict();
 $(document).ready(function() {
 	// Clicking Contact button on homepage displays contact method buttons

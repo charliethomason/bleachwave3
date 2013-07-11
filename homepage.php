@@ -41,12 +41,12 @@ Template Name: Homepage
 			$print = $custom["print"][0];
 			$count++;
 		?>
-		<li class="art-cell-wrap" id="art-cell-<?=$count;?>">
-			<a class="art-cell" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-			<div class="art-meta">
+		<li class="art-cell" id="art-cell-<?=$count;?>">
+			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+			<div class="art-cell-meta">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<?php if($medium != "") { ?>
-					<p class="catdate"><strong>Medium:</strong> <?=$medium?></p>
+					<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong><br><em><?=$medium?></em></p>
 				<?php } ?>
 				<p><a class="btn blue-btn" href="<?php the_permalink(); ?>">More Info</a></p>
 			</div>
