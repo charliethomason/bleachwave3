@@ -9,9 +9,7 @@ add_action( 'wp_enqueue_scripts', 'bleachwave_add_styles' );
 // Add JavaScript files
 function bleachwave_add_scripts() {
 	wp_enqueue_script( 'jquery' );
-	if (is_page_template('about.php')) { 
-		wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/jquery.masonry.min.js', array( 'jquery' ), false, true );
-	}
+	if (is_page_template('about.php')) { wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/jquery.masonry.min.js', array( 'jquery' ), false, true ); }
     wp_enqueue_script( 'bleachwave', get_template_directory_uri() . '/js/bleachwave.js', array( 'jquery' ), false, true );
     wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/inc/lightbox/js/jquery.fancybox.pack.js', array( 'jquery' ), false, true );
     wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/inc/lightbox/js/lightbox.js', array( 'fancybox' ), false, true );
