@@ -13,7 +13,7 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
 <![endif]-->
 </head>
-<body <?php body_class(); ?>>
+<body>
  
 <header id="header">
 	
