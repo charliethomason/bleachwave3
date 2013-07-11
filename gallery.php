@@ -7,7 +7,10 @@ Template Name: Gallery
 <div class="portfolio-index" id="art-index">
 	<h1 class="index-head">Art &amp; Photo Gallery</h1>
 	<div class="portfolio-details">
-		<a class="btn green-btn alignleft" href="http://www.society6.com/cthomason" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-society603.png" alt="Society6 logo" /> Society6 prints</a> <a class="btn lt-grey-btn alignleft" href="http://www.flickr.com/photos/recycledfilm/" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-flickr04.png" alt="Flickr" /> Flickr photos</a> <a class="btn lt-grey-btn alignleft" href="http://instagram.com/charliethomason" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-instagram02.png" alt="Instagram" /> Instagram photos</a>
+		<a class="btn green-btn alignleft" href="http://www.society6.com/cthomason" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-society603.png" alt="Society6 logo" /> Society6 prints</a> 
+		<a class="btn lt-grey-btn alignleft" href="http://www.flickr.com/photos/recycledfilm/" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-flickr04.png" alt="Flickr" /> Flickr photos</a> 
+		<a class="btn lt-grey-btn alignleft" href="http://instagram.com/charliethomason" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-instagram02.png" alt="Instagram" /> Instagram photos</a>
+		<a class="btn lt-grey-btn alignleft" href="http://bleachwave.vsco.co" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-vsco01.png" alt="VSCO" /> VSCOcam Grid</a>
 		<div class="clear"></div>
 	</div>
 	<?php 
