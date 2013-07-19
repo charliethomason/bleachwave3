@@ -28,12 +28,14 @@ $(document).ready(function() {
 	$("a.more-link, .prev-post a, .next-post a").addClass("btn grey-btn");
 
 	// Initiate jQuery Masonry for About page
-	$("#facts-box").masonry({
-		itemSelector : '.fact',
-		// set columnWidth a fraction of the container width
-		columnWidth: function( containerWidth ) {
-			return containerWidth / 4;
-		}
-	});
+	if(typeof($.fn.masonry) != "undefined") {
+		$("#facts-box").masonry({
+			itemSelector : '.fact',
+			// set columnWidth a fraction of the container width
+			columnWidth: function( containerWidth ) {
+				return containerWidth / 4;
+			}
+		});
+	}
 
 });
