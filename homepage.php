@@ -6,6 +6,9 @@ Template Name: Homepage
 <?php get_header(); ?>
  	
 <div class="intro-image">
+	<a id="mobile-portrait" href="/about" title="Charlie Thomason">
+		<img src="<?php bloginfo('template_directory'); ?>/images/cthomason07_680.jpg" alt="Charlie Thomason" />
+	</a>
 	<section class="intro">
 		<div class="introcontent">
 			<h1>Charlie Thomason is a Web Developer, Designer, and Artist from Chicago</h1>

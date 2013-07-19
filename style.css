@@ -138,6 +138,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	text-align:center;
 }
 
+.hidetext {
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+}
+
 .prev-post {
 	float:left;
 	max-width:49%;
@@ -315,21 +321,15 @@ body {
 }
 
 #header h1 a {
+	background:url('images/bw-logo04_960.png') no-repeat scroll 0 0 transparent;
 	display:block;
+	height:299px;
 	margin:0 auto;
-	width:100%;
-}
-
-#header h1 a span {
-	display:none;
+	width:960px;
 }
 
 #header h1 a.fixed-head {
 	padding-top:80px;
-}
-
-#header h1 img {
-	max-width:100%;
 }
 
 #header h2 {
@@ -550,6 +550,16 @@ ul.nav-social a:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+#mobile-portrait {
+	display:none;
+}
+
+#mobile-portrait > img {
+	height:auto;
+	max-width:100%;
+	width:auto;
 }
 
 .intro {
@@ -806,7 +816,7 @@ h2.home-head a:hover:after {
 	text-align:center;
 }
 .about-intro .introcontent {
-	background-color:#eee;
+	background-color:#f1f1f1;
 	-webkit-border-radius:6px;
 	border-radius:6px;
 	float:none;
@@ -820,8 +830,13 @@ h2.home-head a:hover:after {
 	padding:0 0 20px;
 }
 
+.about-section {
+	padding:0;
+}
+
 #skills-box {
 	max-width:700px;
+	padding:40px;
 }
 
 #skills-box .skills-column {
@@ -845,6 +860,10 @@ h2.home-head a:hover:after {
 
 #about-education {
 	padding-bottom:0;
+}
+
+#education-box {
+	background-color:#fff;
 }
 
 #education-box ul {
@@ -879,6 +898,19 @@ h2.home-head a:hover:after {
 
 #education-box img {
 	max-width:100%;
+}
+
+#facts-box {
+	background-color:transparent;
+	border-left:0 none;
+	border-right:0 none;
+	padding:40px 0;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+	box-sizing:content-box;
 }
 
 .fact {
@@ -1183,7 +1215,7 @@ h1.index-head {
 	width:73%;
 }
 
-section.details-box {
+aside.details-box {
 	background:#fff;
 	color:#4a4a4a;
 	float:left;
@@ -1197,7 +1229,7 @@ section.details-box {
 	-moz-box-shadow:0 4px 2px -3px #666;
 	box-shadow:0 4px 2px -3px #666;
 }
-section.details-box ul {
+aside.details-box ul {
 	border-width: 1px 1px 1px 10px;
 	border-style:solid;
 	border-color:#ccc;
@@ -1207,11 +1239,11 @@ section.details-box ul {
 	word-break:hypenate;
 }
 
-section.details-box li {
+aside.details-box li {
 	border-top:1px solid #ccc;
 	padding:5px 2%;
 }
-section.details-box li:first-child {
+aside.details-box li:first-child {
 	border-top:medium none;
 }
 
@@ -1405,6 +1437,11 @@ footer a:hover {
 /* BEGIN CSS3 Media Queries */
 
 @media screen and (max-width:1024px) {
+	#header h1 a {
+		background-image:url('images/bw-logo04_600.png');
+		height:187px;
+		width:600px;
+	}
 	#nav ul.main-nav {
 		margin:0;
 	}
@@ -1427,26 +1464,62 @@ footer a:hover {
 	}
 }
 @media screen and (max-width:680px) {
+	#header h1 {
+		padding-top:100px;
+	}
 	#nav {
 		position:fixed;
 		top:0;
 	}
-	#header h1 a {
-		padding-top:80px;
-		width:100%;
-	}
 	.intro-image {
 		background-image:none;
+		position:relative;
 	}
-	.intro h1 {
-		color:#253B06;
-		text-shadow:none;
+	#mobile-portrait {
+		display:block;
+	}
+	.intro {
+		min-height:0;
+		padding-bottom:20px;
+	}
+	.intro-image h1 {
+		position:absolute;
+		right:20px;
+		top:40px;
+		width:300px;
 	}
 	.intro .introcontent {
 		background-color:transparent;
+		color:#fff;
 		margin-top:0;
+		width:100%;
 	}
-	.nav-social {
+	.about-intro .intro .introcontent {
+		background:#f1f1f1;
+		color:#222;
+		margin-top:10px;
+		width:auto;
+	}
+	#education-box {
+		padding:20px 1.25%;
+	}
+	#education-box li {
+		padding:0 3%;
+	}
+	#education-box li#starter-league {
+		display:block;
+		width:auto;
+	}
+	.introcontent p,
+	.introcontent div {
+		padding-bottom:20px;
+		padding-top:0;
+	}
+	/*.nav-social {
+		display:none;
+	}*/
+	.nav-instagram,
+	.nav-vsco {
 		display:none;
 	}
 	.prev-post, .next-post {
@@ -1461,6 +1534,17 @@ footer a:hover {
 	}
 }
 @media screen and (max-width:600px) {
+	#header h1 a {
+		background-image:url('images/bw-logo04_420.png');
+		height:131px;
+		width:420px;
+	}
+	#header h2 {
+		font-size:1.5em;
+	}
+	.nav-flickr {
+		display:none;
+	}
 	.blog-nav {
 		display:block;
 		margin:20px auto 0;
@@ -1476,6 +1560,43 @@ footer a:hover {
 	.blog-menu {
 		width:180px;
 	}
+	.about-intro .post-image img.alignright {
+		float:none;
+		height:auto !important;
+		margin:0 auto;
+		max-width:100%;
+		padding:0;
+		width:auto !important;
+	}
+	#education-box {
+		padding:10px 1.25%;
+	}
+	#education-box li {
+		display:block;
+		padding:10px 0;
+		width:auto;
+	}
+	.art-item .portfolio-index-image {
+		display:block;
+		float:none;
+		margin:0 0 20px;
+		text-align:center;
+		width:auto;
+	}
+	.art-item .portfolio-index-meta {
+		float:none;
+		margin-left:0;
+		width:auto;
+	}
+	.art-blog div.entry {
+		float:none;
+		width:100%;
+	}
+	aside.details-box {
+		float:none;
+		margin:20px auto;
+		width:75%;
+	}
 }
 @media screen and (max-width:500px) {
 	#nav-logo {
@@ -1485,11 +1606,33 @@ footer a:hover {
 		float:none;
 		width:100%;
 	}
+	.intro-image h1 {
+		font-size:1.5em;
+		top:20px;
+		width:250px;
+	}
 	.portfolio-index-item {
 		padding:20px 4.5%
 	}
+	#skills-box .skills-column,
+	#skills-box .skills-column.second {
+		float:none;
+		margin:0 auto;
+		width:320px;
+	}
+	.fact {
+		width:40%;
+	}
 }
 @media screen and (max-width:420px) {
+	#header h1 a {
+		background-image:url('images/bw-logo04_320.png');
+		height:100px;
+		width:320px;
+	}
+	#header h2 {
+		font-size:1.25em;
+	}
 	#nav ul.main-nav {
 		border:medium none;
 	}
@@ -1517,6 +1660,16 @@ footer a:hover {
 	:-ms-input-placeholder {
 		color:#fff;
 	}
+	.intro-image h1 {
+		font-size:1.25em;
+		top:10px;
+		text-shadow:1px 2px 0 #000;
+		width:200px;
+	}
+	#skills-box .skills-column,
+	#skills-box .skills-column.second {
+		width:auto;
+	}
 	.portfolio-index-meta h2 {
 		margin-top:10px;
 	}
@@ -1526,5 +1679,8 @@ footer a:hover {
 	}
 	.art-item .portfolio-index-meta {
 		width:100%;
+	}
+	aside.details-box {
+		width:95%;
 	}
 }

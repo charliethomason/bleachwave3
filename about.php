@@ -57,7 +57,7 @@ Template Name: About Page
 
 		<div id="education-box" class="blog">
 			<ul>
-				<li>
+				<li id="univ-ky">
 					<a href="http://www.uky.edu" target="_blank" rel="nofollow">
 						<img src="<?php bloginfo('template_directory'); ?>/images/ukentucky01.jpg" alt="University of Kentucky logo" border="0" />
 					</a>
@@ -65,7 +65,7 @@ Template Name: About Page
 					<h4>Bachelor of Fine Arts (BFA)<br> Art Studio</h4>
 					<p>Graduated Dec. 2007, <em>Magna Cum Laude</em></p>
 				</li>
-				<li>
+				<li id="depaul">
 					<a href="http://www.depaul.edu" target="_blank" rel="nofollow">
 						<img src="<?php bloginfo('template_directory'); ?>/images/depaul01.jpg" alt="DePaul University logo" border="0" />
 					</a>
@@ -73,7 +73,7 @@ Template Name: About Page
 					<h4>Master of Arts (MA)<br> New Media Studies</h4>
 					<p>Graduated May 2010</p>
 				</li>
-				<li>
+				<li id="starter-league">
 					<a href="http://www.starterleague.com" target="_blank" rel="nofollow">
 						<img src="<?php bloginfo('template_directory'); ?>/images/starterleague01.jpg" alt="Starter League logo" border="0" />
 					</a>

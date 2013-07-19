@@ -16,8 +16,12 @@
 	<article id="art-page-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong> &#8226; <?php the_category(', '); ?></p>
+
+		<div class="entry"> 
+			<?php the_content(); ?>
+		</div><!-- div.entry -->
 			
-		<section class="details-box">
+		<aside class="details-box">
 			<ul id="details-1">
 				<li><?php if ($print != "") { ?>
 						<a href="<?=$print?>" target="_blank" rel="nofollow">Buy Prints</a>
@@ -48,13 +52,8 @@
 					<li><strong>Tags: </strong><?php the_tags('', ', '); ?></li>
 			</ul>
 			<div class="clear"></div>
-		</section>
+		</aside>
 		
-		<div class="entry"> 
-		
-			<?php the_content(); ?>
-
-		</div><!-- div.entry -->
 		<div class="clear"></div>
 
 	</article><!-- article.post -->

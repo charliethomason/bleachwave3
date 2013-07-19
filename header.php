@@ -18,10 +18,7 @@
 <header id="header">
 	
 	<h1>
-		<a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
-			<img src="<?php bloginfo('template_directory'); ?>/images/bw-logo04.png" alt="Bleachwave logo" />
-			<span><?php bloginfo('name'); ?></span>
-		</a>
+		<a class="hidetext" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
 	</h1>
 	<h2><?php bloginfo('description'); ?></h2>
 	
