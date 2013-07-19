@@ -666,9 +666,21 @@ li#contact-linkedin a.contact-btn {
 }
 
 .blog {
+	background-color:#f1f1f1;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
 	clear:both;
-	margin:40px auto 0;
+	color:#222;
+	margin:0 auto;
 	max-width:960px;
+	padding:40px 1.25%; /* 20px */
+	-moz-box-shadow:20px 0 20px -14px #000, -20px 0 20px -14px #000;
+	-webkit-box-shadow:20px 0 20px -14px #000, -20px 0 20px -14px #000;
+	box-shadow:20px 0 20px -14px #000, -20px 0 20px -14px #000;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	border-collapse: separate;
 }
 
 .home-section {
@@ -691,14 +703,14 @@ li#contact-linkedin a.contact-btn {
 
 h2.home-head {
 	text-align:left;
-	-webkit-box-shadow:0 1px 3px #000000;
-	-moz-box-shadow:0 1px 3px #000000;
-	box-shadow:0 1px 3px #000000;
+	-moz-box-shadow:0 1px 4px #000000;
+	-webkit-box-shadow:0 1px 4px #000000;
+	box-shadow:0 1px 4px #000000;
 }
 
 h2.home-head a {
 	background-color: #539313;
-	border-top:5px solid #253B06;
+	border-bottom:5px solid #253B06;
 	color:#fff;
 	display:block;
 	padding:20px 0;
@@ -776,10 +788,6 @@ h2.home-head a:hover:after {
 	background-color: rgba(255,255,255,0.7);
 }
 
-.blog-home {
-	margin:40px auto;
-}
-
 /* END Homepage */
 
 /***********************/
@@ -829,16 +837,6 @@ h2.home-head a:hover:after {
 
 #about-education {
 	padding-bottom:0;
-}
-
-#education-box {
-	background-color:#fff;
-	border-left:1px solid #000;
-	border-right:1px solid #000;
-	margin-top:0;
-	-webkit-box-shadow:0 14px 6px 10px #000;
-	-mox-box-shadow:0 14px 6px 10px #000;
-	box-shadow:0 14px 6px 10px #000;
 }
 
 #education-box ul {
@@ -911,18 +909,27 @@ article.post h1 {
 }
 
 article.post h1 a {
-	color:#CCC;
+	color:#539313;
 	font-family:'Special Elite', 'American Typewriter', 'Courier New', Courier, monospace;
 	font-size:;
 	font-weight:normal;
 }
 
 article.post h1 a:hover {
-	color:#539313;
+	color:#999;
 }
 
-article.post h2 {
+article.post h2,
+article.post h3,
+article.post h4,
+article.post h5,
+article.post h6 {
+	color:#539313;
 	text-align:left;
+}
+
+.archivetitle {
+	color:#999;
 }
 
 .catdate {
@@ -1035,6 +1042,10 @@ article.post a.more-link {
 .taglist {
 	margin-bottom:40px;
 	font-size:0.875em;
+}
+
+.gallery {
+	padding:20px 0;
 }
 
 /* END Blog Post Styles */
@@ -1221,7 +1232,7 @@ section.details-box li:first-child {
 	border-width: 1px 1px 1px 10px;
 	border-style:solid;
 	border-color:#ccc;
-	margin:10px auto 40px;
+	margin:0 auto 40px;
 	padding:20px 0;
 	text-align:center;
 	width:62.5%; /* 600 / 960 */
