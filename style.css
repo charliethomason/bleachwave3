@@ -530,6 +530,14 @@ ul.nav-social a:hover {
 	background-image:url('images/icon-flickr03.png');
 }
 
+.nav-instagram a {
+	background-image:url('images/icon-instagram03.png');
+}
+
+.nav-vsco a {
+	background-image:url('images/icon-vsco02.png');
+}
+
 /* END Header / Nav */
 
 /************************/

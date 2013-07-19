@@ -69,7 +69,9 @@
 			<ul class="nav-social">
 				<li class="nav-twitter"><a href="http://twitter.com/charliethomason" rel="nofollow" target="_blank" title="Twitter">Twitter</a></li>
 				<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" rel="nofollow" target="_blank" title="Flickr">Flickr</a></li>
-				<li class="nav-vimeo"><a href="http://vimeo.com/charliethomason" rel="nofollow" target="_blank" title="Vimeo">Vimeo</a></li>
+				<?php /*<li class="nav-vimeo"><a href="http://vimeo.com/charliethomason" rel="nofollow" target="_blank" title="Vimeo">Vimeo</a></li>*/ ?>
+				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" rel="nofollow" target="_blank" title="Instagram">Instagram</a></li>
+				<li class="nav-vsco"><a href="http://bleachwave.vsco.co" rel="nofollow" target="_blank" title="VSCO Grid">VSCO Grid</a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>
