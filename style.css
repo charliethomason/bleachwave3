@@ -73,7 +73,7 @@ em, i {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color:#CCC;
+	color:#666;
 	font-family:"Fjalla One", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight:normal;
 	line-height:1.5em;
@@ -290,12 +290,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 /* BEGIN Structural */
 
 body {
-	background-color:#333;
-	-moz-box-shadow: 0 0 70px #000 inset;
-	-webkit-box-shadow: 0 0 70px #000 inset;
-	-o-box-shadow: 0 0 70px #000 inset;
-	box-shadow: 0 0 70px #000 inset;
-	color:#fff;
+	background-color:#F8F5E9;
+	-moz-box-shadow: 0 0 70px #CBBB85 inset;
+	-webkit-box-shadow: 0 0 70px #CBBB85 inset;
+	-o-box-shadow:0 0 70px #CBBB85 inset;
+	box-shadow: 0 0 70px #CBBB85 inset;
+	color:#222;
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -317,13 +317,13 @@ body {
 #header h1 {
 	margin:0 auto;
 	max-width:960px;
-	padding:30px 0 10px;
+	padding:10px 0;
 }
 
 #header h1 a {
-	background:url('images/bw-logo04_960.png') no-repeat scroll 0 0 transparent;
+	background:url('images/bw-logo05_960.png') no-repeat scroll 0 0 transparent;
 	display:block;
-	height:299px;
+	height:420px;
 	margin:0 auto;
 	width:960px;
 }
@@ -333,9 +333,10 @@ body {
 }
 
 #header h2 {
+	color:#666;
 	font-family:'Special Elite', 'American Typewriter', 'Courier New', Courier, monospace;
-	font-size:2em;
-	margin:0 0 30px;
+	font-size:1.75em;
+	margin:-20px 0 20px;
 	/*position:relative;
 	top:-30px;*/
 }
@@ -685,16 +686,13 @@ li#contact-linkedin a.contact-btn {
 
 .blog {
 	background-color:#f1f1f1;
-	border-left:1px solid #000;
-	border-right:1px solid #000;
+	border-left:1px solid #253B06;
+	border-right:1px solid #253B06;
 	clear:both;
 	color:#222;
 	margin:0 auto;
 	max-width:960px;
-	padding:40px 1.25%; /* 20px */
-	-moz-box-shadow:20px 0 20px -14px #000, -20px 0 20px -14px #000;
-	-webkit-box-shadow:20px 0 20px -14px #000, -20px 0 20px -14px #000;
-	box-shadow:20px 0 20px -14px #000, -20px 0 20px -14px #000;
+	padding:40px 2.4%;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
@@ -720,6 +718,7 @@ li#contact-linkedin a.contact-btn {
 }
 
 h2.home-head {
+	position:relative;
 	text-align:left;
 	-moz-box-shadow:0 1px 4px #000000;
 	-webkit-box-shadow:0 1px 4px #000000;
@@ -1423,8 +1422,8 @@ footer a:hover {
 
 @media screen and (max-width:1024px) {
 	#header h1 a {
-		background-image:url('images/bw-logo04_600.png');
-		height:187px;
+		background-image:url('images/bw-logo05_600.png');
+		height:263px;
 		width:600px;
 	}
 	#nav ul.main-nav {
@@ -1520,8 +1519,8 @@ footer a:hover {
 }
 @media screen and (max-width:600px) {
 	#header h1 a {
-		background-image:url('images/bw-logo04_420.png');
-		height:131px;
+		background-image:url('images/bw-logo05_420.png');
+		height:184px;
 		width:420px;
 	}
 	#header h2 {
@@ -1611,8 +1610,8 @@ footer a:hover {
 }
 @media screen and (max-width:420px) {
 	#header h1 a {
-		background-image:url('images/bw-logo04_320.png');
-		height:100px;
+		background-image:url('images/bw-logo05_320.png');
+		height:140px;
 		width:320px;
 	}
 	#header h2 {
