@@ -1140,25 +1140,10 @@ h1.index-head {
 }
 
 .portfolio-index-item {
-	background: #f1f1f1; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f1f1f1 0%, #ffffff 43%, #d7d7d7 90%, #eaeaea 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(43%,#ffffff), color-stop(90%,#d7d7d7), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #f1f1f1 0%,#ffffff 43%,#d7d7d7 90%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #f1f1f1 0%,#ffffff 43%,#d7d7d7 90%,#eaeaea 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #f1f1f1 0%,#ffffff 43%,#d7d7d7 90%,#eaeaea 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #f1f1f1 0%,#ffffff 43%,#d7d7d7 90%,#eaeaea 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
-	border:2px solid #000;
-	-webkit-border-radius:6px;
-	border-radius:6px;
 	color:#000;
 	display:block;
 	margin:0 0 30px;
 	padding:20px 2.1%;
-	position:relative;
-	-webkit-box-shadow:0 4px 0 #000;
-	-moz-box-shadow:0 4px 0 #000;
-	box-shadow:0 4px 0 #000;
 }
 
 .portfolio-index-image {
