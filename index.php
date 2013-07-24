@@ -1,5 +1,7 @@
 <?php get_header(); ?>
     <div class="blog blog-index">
+
+    	<h1 class="index-head">The Blog</h1>
 	
 		<div class="blog-nav-wrap">
 			 <?php get_search_form(); ?> 
