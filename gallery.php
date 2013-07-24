@@ -4,8 +4,22 @@ Template Name: Gallery
 */
 ?>
 <?php get_header(); ?>
-<div class="portfolio-index" id="art-index">
+<div class="blog blog-gallery">
+
 	<h1 class="index-head">Art &amp; Photo Gallery</h1>
+
+	<div class="blog-nav-wrap">
+		 <?php get_search_form(); ?> 
+		<nav class="blog-nav">
+			<span id="blog-cat-menu">
+				<a href="javascript:void(0)" class="btn green-btn">Categories</a>
+				<ul class="blog-menu">
+				</ul>
+			</span>
+		</nav>
+		<div class="clear"></div>
+	</div>
+
 	<div class="portfolio-details">
 		<a class="btn green-btn alignleft" href="http://www.society6.com/cthomason" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-society603.png" alt="Society6 logo" /> Society6 prints</a> 
 		<a class="btn lt-grey-btn alignleft" href="http://www.flickr.com/photos/recycledfilm/" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-flickr04.png" alt="Flickr" /> Flickr photos</a> 
@@ -13,6 +27,7 @@ Template Name: Gallery
 		<a class="btn lt-grey-btn alignleft" href="http://bleachwave.vsco.co" rel="nofollow" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/icon-vsco01.png" alt="VSCO" /> VSCOcam Grid</a>
 		<div class="clear"></div>
 	</div>
+
 	<?php 
 	  $temp = $wp_query; 
 	  $wp_query = null; 
@@ -50,5 +65,5 @@ Template Name: Gallery
 	?>
 	
 	<div class="clear"></div> 
-</div><!--.portfolio-index-->
+</div><!--.blog.blog-gallery-->
 <?php get_footer(); ?>
