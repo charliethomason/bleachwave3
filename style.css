@@ -297,6 +297,8 @@ body {
 	box-shadow: 0 0 70px #CBBB85 inset;
 	color:#222;
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0 0 20px;
 }
 
 #header {
@@ -715,6 +717,10 @@ li#contact-linkedin a.contact-btn {
 
 #home-art h2 {
 	margin:0;
+}
+
+#home-blog {
+	padding:0;
 }
 
 h2.home-head {
@@ -1421,23 +1427,24 @@ input#s {
 /* BEGIN Footer */
 
 footer {
+	background-color:#253B06;
 	clear:both;
+	color:#eee;
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size:0.875em;
 	line-height:1.312em;
-	color:#444;
-	text-align:center;
+	margin:0 auto;
 	max-width:960px;
-	margin:20px auto 0;
-	padding:0 0 20px;
+	padding:20px 0;
+	text-align:center;
 }
 
 footer a, footer a:visited {
-	color:#444;
+	color:#ccc;
 }
 
 footer a:hover {
-	color:#888;
+	color:#9CCB85;
 	text-decoration:underline;
 }
 
