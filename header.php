@@ -64,11 +64,11 @@
 				<li id="nav-store"><a href="http://society6.com/cthomason" rel="nofollow" title="links to Society6.com" target="_blank">Store</a></li>
 			</ul>
 			<ul class="nav-social">
-				<li class="nav-twitter"><a href="http://twitter.com/charliethomason" rel="nofollow" target="_blank" title="Twitter">Twitter</a></li>
-				<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" rel="nofollow" target="_blank" title="Flickr">Flickr</a></li>
-				<?php /*<li class="nav-vimeo"><a href="http://vimeo.com/charliethomason" rel="nofollow" target="_blank" title="Vimeo">Vimeo</a></li>*/ ?>
-				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" rel="nofollow" target="_blank" title="Instagram">Instagram</a></li>
-				<li class="nav-vsco"><a href="http://bleachwave.vsco.co" rel="nofollow" target="_blank" title="VSCO Grid">VSCO Grid</a></li>
+				<li class="nav-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Twitter</span></a></li>
+				<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank"><span>Flickr</span></a></li>
+				<?php /*<li class="nav-vimeo"><a href="http://vimeo.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Vimeo</span></a></li>*/ ?>
+				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
+				<li class="nav-vsco"><a href="http://bleachwave.vsco.co" rel="nofollow" class="contact-btn" target="_blank"><span>VSCO Grid</span></a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>
