@@ -11,12 +11,18 @@ Template Name: Gallery
 	<div class="blog-nav-wrap">
 		 <?php get_search_form(); ?> 
 		<nav class="blog-nav">
-			<span id="blog-cat-menu">
-				<a href="javascript:void(0)" class="btn green-btn">Categories</a>
-				<ul class="blog-menu">
-				</ul>
-			</span>
+			<a href="javascript:void(0)" id="tag-list-btn" class="btn lt-grey-btn">Tags</a>
 		</nav>
+		<div id="tag-list">
+			<?php
+			$tags = get_tags();
+			if ($tags) {
+				foreach ($tags as $tag) {
+					echo '<a href="' . get_tag_link( $tag->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $tag->name ) . '" class="tag-btn">' . $tag->name.'</a>, ';
+				}
+			}
+			?>
+		</div>
 		<div class="clear"></div>
 	</div>
 

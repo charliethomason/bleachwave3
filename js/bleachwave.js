@@ -4,10 +4,17 @@ $(document).ready(function() {
 
 	// Clicking Contact button on homepage displays contact method buttons
 	$("#intro-contact-btn").click(function(e) {
-		e.preventDefault();
-		$("#intro-contact").slideToggle();
-		$(this).toggleClass("clicked");
+		showContent($(this),"#intro-contact",e);
 	});
+	$("#tag-list-btn").click(function(e) {
+		showContent($(this),"#tag-list",e);
+	});
+
+	function showContent(button,target,event) {
+		event.preventDefault();
+		$(target).slideToggle();
+		$(button).toggleClass("clicked");
+	}
 
 	// Clicking anywhere in art cell container takes you to post URL
 	$(".art-cell").click(function() {

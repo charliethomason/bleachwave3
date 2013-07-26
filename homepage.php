@@ -62,7 +62,7 @@ Template Name: Homepage
 	<div class="blog blog-home">
 		<div class="blog-nav-wrap">
 			 <?php get_search_form(); ?> 
-			<nav class="blog-nav">
+			<nav class="blog-nav blog-nav-menu">
 				<span id="blog-cat-menu">
 					<a href="javascript:void(0)" class="btn green-btn">Categories</a>
 					<ul class="blog-menu">

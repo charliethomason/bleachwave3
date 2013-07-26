@@ -667,7 +667,8 @@ li#contact-linkedin a.contact-btn {
 	background:url("images/icon-linkedin01.png") no-repeat scroll 0 0 transparent;
 }
 
-#intro-contact-btn.clicked {
+#intro-contact-btn.clicked,
+#tag-list-btn.clicked {
 	background: #96c421; /* Old browsers */
 	background: -moz-linear-gradient(top,  #96c421 0%, #618416 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96c421), color-stop(100%,#618416)); /* Chrome,Safari4+ */
@@ -1092,7 +1093,7 @@ article.post a.more-link {
 
 /***************************/
 
-/* BEGIN Portfolio Styles */
+/* BEGIN Gallery Styles */
 
 .portfolio-index-meta h2 {
 	font-size:1.25em;
@@ -1125,6 +1126,10 @@ h1.index-head {
 
 #art-index h1.index-head {
 	margin-bottom:10px;
+}
+
+#tag-list {
+	display:none;
 }
 
 .gallery-btn-row {
@@ -1415,6 +1420,15 @@ input#s {
 	transition-delay:0s;
 }
 
+#tag-list-btn {
+	margin-top:0;
+}
+
+a.tag-btn {
+	font-family:Lora, Georgia, 'Times New Roman', Times, serif;
+	font-style:italic;
+}
+
 /* END Blog Sidebar */
 
 /***************************/
@@ -1561,7 +1575,7 @@ footer a:hover {
 	.nav-flickr {
 		display:none;
 	}
-	.blog-nav {
+	.blog-nav-menu {
 		display:block;
 		margin:20px auto 0;
 		width:200px;
