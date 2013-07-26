@@ -1126,15 +1126,41 @@ h1.index-head {
 	margin-bottom:10px;
 }
 
-.portfolio-details {
-	margin:0 0 30px;
+.gallery-btn-row {
+	float:left;
+	margin:0 0 10px;
+	overflow:hidden;
+	position:relative;
+	width:100%;
 }
 
-.portfolio-details a.btn {
-	margin-right:5px;
+.gallery-btn-row ul {
+	clear:left;
+	float:left;
+	left:50%;
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	text-align:center;
 }
 
-.portfolio-details a.btn img {
+.gallery-btn-row li {
+	display:block;
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	right:50%;
+}
+
+.gallery-btn-row a.btn {
+	display:block;
+	margin:0 0 10px 10px;
+}
+
+.gallery-btn-row a.btn img {
 	vertical-align: middle;
 }
 
@@ -1256,7 +1282,7 @@ aside.details-box li:first-child {
 	border-width: 1px 1px 1px 10px;
 	border-style:solid;
 	border-color:#ccc;
-	margin:0 auto 40px;
+	margin:0 auto 20px;
 	padding:20px 0;
 	text-align:center;
 	width:62.5%; /* 600 / 960 */
@@ -1322,6 +1348,7 @@ input#s {
 	text-align:left;
 	top:35px;
 	width:160px;
+	z-index:1;
 	-webkit-box-shadow:0 0 6px #666;
 	-moz-box-shadow:0 0 6px #666;
 	box-shadow:0 0 6px #666;
@@ -1445,6 +1472,9 @@ footer a:hover {
 	}
 	.blog-nav-wrap {
 		width:90%;
+	}
+	.gallery-btn-row ul {
+		width:420px;
 	}
 }
 @media screen and (max-width:680px) {
@@ -1666,5 +1696,8 @@ footer a:hover {
 	}
 	aside.details-box {
 		width:95%;
+	}
+	.gallery-btn-row ul {
+		width:200px;
 	}
 }
