@@ -752,7 +752,7 @@ h2.home-head a:hover:after {
 	word-spacing: -4px;
 }
 
-.art-cell {
+.art-cell /* Homepage gallery icons */{
 	cursor:pointer;
 	display:inline-block;
 	letter-spacing: normal;
@@ -762,7 +762,7 @@ h2.home-head a:hover:after {
 	word-spacing: normal;
 }
 
-.art-cell-meta {
+.art-cell-meta, /* Homepage gallery icons */ {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -775,17 +775,20 @@ h2.home-head a:hover:after {
 	width:100%;
 }
 
-.art-cell-meta h3 a {
+.art-cell-meta h3 a,
+.gallery-caption a /* Gallery style for posts */ {
 	color:#fff;
 	text-shadow:0 2px 1px #000;
 }
 
-.art-cell-meta:hover h3 a {
+.art-cell-meta:hover h3 a,
+.gallery-item:hover > .gallery-caption a /* Gallery style for posts */ {
 	color: #253B06;
 	text-shadow:none;
 }
 
-.art-cell-meta h3 a:hover {
+.art-cell-meta h3 a:hover,
+.gallery-item:hover .gallery-caption a:hover /* Gallery style for posts */ {
 	color:#539313;
 }
 
@@ -802,7 +805,8 @@ h2.home-head a:hover:after {
 	display:block;
 }
 
-.art-cell:hover > .art-cell-meta {
+.art-cell:hover > .art-cell-meta,
+.gallery-item:hover > .gallery-caption /* Gallery style for posts */ {
 	background-color:#f1f1f1;
 	background-color: rgba(255,255,255,0.7);
 }
@@ -1085,10 +1089,6 @@ article.post a.more-link {
 	font-size:0.875em;
 }
 
-.gallery {
-	padding:20px 0;
-}
-
 /* END Blog Post Styles */
 
 /***************************/
@@ -1269,13 +1269,46 @@ aside.details-box li:first-child {
 	width:67.71%; /* 650 / 960 */
 }
 
+.gallery {
+	padding:0 0 20px;
+}
+
 .gallery-item {
-	margin-left:3.07%; /* 20 / 650 */
+	cursor:pointer;
+	display:inline-block;
+	float:left;
+	letter-spacing: normal;
+	margin:0;
+	overflow:hidden;
+	position:relative;
+	width:25%;
+	word-spacing: normal;
 }
 
 .gallery > .gallery-item:first-child {
 	margin-left:0;
 }
+
+.gallery-caption {
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+.gallery-caption > a.gallery-link {
+	font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	left:0;
+	line-height:1.25em;
+	padding:5px;
+	position:absolute;
+	text-align:center;
+	text-shadow:0 1px 1px #000000;
+	top:0;
+}
+
+/* SEE ALSO: lines ~755-814 (end of Homepage section) for additional .gallery-item & .gallery-caption styling
 
 /* END Portfolio Styles */
 

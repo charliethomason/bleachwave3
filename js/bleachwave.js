@@ -44,5 +44,14 @@ $(document).ready(function() {
 			}
 		});
 	}
+	// If there is a gallery on the page
+	if($(".gallery").length > 0) {
+		// Wrap the .gallery-caption text with an a.gallery-link tag with the href of the .gallery-icon a
+		$(".gallery-item").each(function() {
+			var imageLink = $(".gallery-icon > a", this).attr("href");
+			var linkText = $(".gallery-caption", this).text();
+			$(".gallery-caption", this).wrapInner('<a href="' + imageLink + '" title="' + linkText + '" class="gallery-link" rel="gallery" />');
+		});
+	}
 
 });
