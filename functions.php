@@ -83,4 +83,11 @@ function bleachwave_remove_gallery_css( $css ) {
 }
 add_filter( 'gallery_style', 'bleachwave_remove_gallery_css' );
 
+// Remove title attribute from category links
+function wp_list_categories_remove_title_attributes($output) {
+    $output = preg_replace('` title="(.+)"`', '', $output);
+    return $output;
+}
+add_filter('wp_list_categories', 'wp_list_categories_remove_title_attributes');
+
 ?>
