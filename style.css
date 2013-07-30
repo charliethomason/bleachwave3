@@ -1085,10 +1085,6 @@ article.post a.more-link {
 	font-size:0.875em;
 }
 
-.gallery {
-	padding:20px 0;
-}
-
 /* END Blog Post Styles */
 
 /***************************/
@@ -1269,12 +1265,42 @@ aside.details-box li:first-child {
 	width:67.71%; /* 650 / 960 */
 }
 
-.gallery-item {
-	margin-left:3.07%; /* 20 / 650 */
+.gallery {
+	margin:-5px 0 20px -2%;
 }
 
-.gallery > .gallery-item:first-child {
-	margin-left:0;
+.gallery-item {
+	display:inline-block;
+	margin:5px 0 5px 2%;
+	padding:0;
+	vertical-align: top;
+	width:23%;
+}
+
+.gallery-icon > a {
+	border:1px solid #253B06;
+	display:block;
+}
+
+.gallery-item:hover > .gallery-icon > a {
+	border:1px solid #539313;
+}
+
+.gallery-icon img {
+	display:block;
+}
+
+.gallery-caption {
+	background-color:#253B06;
+	color:#eee;
+	cursor:pointer;
+	font: bold 0.875em/1.25em Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	padding:3px 0;
+	text-align:center;
+}
+
+.gallery-item:hover > .gallery-caption {
+	background-color:#539313;
 }
 
 /* END Portfolio Styles */

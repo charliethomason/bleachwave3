@@ -44,5 +44,17 @@ $(document).ready(function() {
 			}
 		});
 	}
+	
+	// Clicking on gallery caption text triggers the click event for the thumbnail img's link tag
+	if($(".gallery").length > 0) {
+		$(".gallery").each(function() {
+			var caption = $(".gallery-caption", this);
+			$(caption).click(function(e) {
+				e.preventDefault();
+				var gLink = $(this).siblings($(".gallery-icon")).find("a");
+				$(gLink).click();
+			});
+		});
+	}
 
 });
