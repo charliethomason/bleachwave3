@@ -1,6 +1,6 @@
 <?php get_header(); ?>
  
-    <div class="blog archive-blog<?php if (is_category()) { ?> category-blog<?php } ?>">
+	<div class="blog archive-blog<?php if (is_category()) { ?> category-blog<?php } ?>">
 
 		<div class="blog-nav-wrap">
 			 <?php get_search_form(); ?> 
@@ -36,18 +36,25 @@
 			<?php } ?>
 			
 			<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-	        <article class="post">
-	        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+			<article class="post">
+			<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	<p class="catdate"><?php the_time('D, M j, Y'); ?> • <?php the_category(', '); ?></p>
  
-	            <div class="entry">
-	            <?php the_content('Continue Reading...'); ?>
+				<div class="entry">
+
+					<?php if (is_tag()) {
+						echo '<div class="alignleft">';
+						the_post_thumbnail('medium');
+						echo '</div>';
+						the_excerpt();
+					} else {
+						the_content('Continue Reading...');
+					} ?>
+
+				</div>
  
- 
-	            </div>
- 
-	        </article>
-         
+			</article>
+		 
 			<?php endwhile; ?>
 
 			<div class="navigation">

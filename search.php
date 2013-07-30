@@ -26,8 +26,11 @@
         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		<p class="catdate"><?php the_time('D, M j, Y'); ?> &#8226; <?php the_category(', '); ?></p>
             
-			<div class="entry">    
-	                <?php the_content('Continue Reading...'); ?>
+			<div class="entry">  
+					<div class="alignleft">
+						<?php the_post_thumbnail('medium'); ?>
+					</div>
+	                <?php the_excerpt(); ?>
             </div><!-- div.entry -->
  
     	</article><!-- article.post -->
