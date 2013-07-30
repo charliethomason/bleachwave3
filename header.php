@@ -35,18 +35,16 @@
 					{
 					echo " class=\"active\"";
 					}
-					?> id="charlie"><a href="/about">About</a>
-					<ul>
-						<li><a href="/about">About</a></li>
-						<li><a href="/resume">Resume</a></li>
-						<li><a href="/art">Contact</a></li>
-					</ul></li>
+					?> id="charlie"><a href="/about">About</a></li>
 				<li<?php
 					if (is_home() || is_singular('post') || is_category() || is_tag())
 					{
 					echo " class=\"active\"";
 					}
-					?>><a href="/blog">Blog</a></li>
+					?>><a href="/blog">Blog</a>
+					<ul>
+						<?php wp_list_categories('orderby=name&use_desc_for_title=0&title_li='); ?>
+					</ul></li>
 				<?php
 				/*<li<?php
 					if (is_page_template('webdev.php') || is_singular('webdev'))
@@ -60,7 +58,7 @@
 					{
 					echo " class=\"active\"";
 					}
-					?>><a href="/gallerys">Gallery</span></a></li>
+					?>><a href="/galleries">Gallery</span></a></li>
 				<li id="nav-store"><a href="http://society6.com/cthomason" rel="nofollow" title="links to Society6.com" target="_blank">Store</a></li>
 			</ul>
 			<ul class="nav-social">
