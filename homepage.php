@@ -12,7 +12,7 @@ Template Name: Homepage
 	<section class="intro">
 		<div class="introcontent">
 			<h1>Charlie Thomason is a Web Developer, Designer, and Artist from Chicago</h1>
-			<p>He is currently an Associate Presentation Layer Developer for <a href="http://www.razorfish.com" target="_blank">Razorfish</a> and specializes in CSS3, jQuery, responsive design, and WordPress.</p>
+			<p>He is currently an Associate Presentation Layer Engineer at <a href="http://www.razorfish.com" target="_blank">Razorfish</a> and specializes in CSS3, jQuery, responsive design, and WordPress.</p>
 			<p>Charlie published his first photography book, <a href="http://www.blurb.com/b/2868673-open-range" target="_blank"><em>Open Range: From Monument Valley to the Mojave Desert</em></a> in January 2012, and has had paintings, drawings, and photographs featured in numerous exhibitions.</p>
 			<div>
 				<a class="btn blue-btn" href="/about">Learn More</a>
@@ -75,7 +75,7 @@ Template Name: Homepage
 
 		<div class="blog-posts">
 			<?php 
-				query_posts( 'posts_per_page=10'); 
+				query_posts( 'posts_per_page=5'); 
 				$count = 1;
 			?>
 	        <?php while(have_posts()) : the_post(); ?>
