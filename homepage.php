@@ -31,7 +31,7 @@ Template Name: Homepage
 </div>
 
 <section id="home-art" class="home-section">
-	<h2 class="home-head"><a href="/art"> Gallery </a></h2>
+	<h2 class="home-head"><a href="/galleries"> Gallery </a></h2>
 	<ul id="art-cells">
 		<?php 
 			$loop = new WP_Query(array('post_type' => 'gallery', 'posts_per_page' => 10)); 
