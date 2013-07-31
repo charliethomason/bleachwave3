@@ -88,14 +88,21 @@ Template Name: About Page
 	<section id="about-facts" class="home-section about-section">
 		<h2 class="home-head about-head"><a href="javascript:void(0)"> Random Facts </a></h2>
 		<div id="facts-box" class="blog">
-			<div class="fact">I enjoy butter burgers and french fries and milkshakes.</div>
-			<div class="fact">My gun collection includes 45 shotguns made in the USSR in the 1930s.</div>
-			<div class="fact">My favorite movies are Wild Hogs, Glitter, Jersey Girl, Santa Claus Conquers the Martians, and Centipede 2.</div>
-			<div class="fact">At restaurants, I choose not to sit near people of other ethnicities.</div>
-			<div class="fact">There are only 2 types of people in this world: you and me.</div>
-			<div class="fact">Everyone tells me that I look like Woody Harrelson, but the truth is that I look like Joan Rivers if she was a man and had done meth for about 5 years.</div>
-			<div class="fact">Inside of my brain, it's all just like fuckin' naked sluts and bottles of Jack, bro.</div>
-			<div class="fact">I am the enemy.</div>
+			<div class="fact">I hope to be remembered as creative, unique, positive, nice, and intelligent.</div>
+			<div class="fact">I like to wear Calvin Klein shirts, Levi's jeans, and Converse All-Star high tops.</div>
+			<div class="fact">If I could live anywhere in the world, I would still live in the South Loop of Chicago.</div>
+			<div class="fact">Sports teams I care about: Ferrari Formula 1, Chicago White Sox, and Chicago Blackhawks.</div>
+			<div class="fact">My ideal sleeping time is 1AM to 7AM.</div>
+			<div class="fact">My favorite foods are pizza, bagels, jalapeños, hot dogs, and Rainier cherries.</div>
+			<div class="fact">My favorite beers are Guinness, Goose Island 312, Yuengling, Hofbrauhaus, and PBR.</div>
+			<div class="fact">The only reason I own a television is to watch movies. I hate 90% of what's on TV.</div>
+			<div class="fact">My favorite actors are Vincent Price and Jack Nicholson. My favorite actress is Kate Winslet.</div>
+			<div class="fact">My least favorite actor is Ben Stiller.</div>
+			<div class="fact">I used to think freelancing was the best kind of career for me; now I much prefer having a full-time job.</div>
+			<div class="fact">I don't own a car and have no intention of ever buying one.</div>
+			<div class="fact">I am afraid of praying mantises, moths, and accidentally ingesting soap.</div>
+			<div class="fact">I don't eat or drink anything with high fructose corn syrup or MSG.</div>
+			<div class="fact">I was a vegetarian for 5 years. It started by wanting to get healthier and ended because bacon.</div>
 		</div>
 	</section>
 </div>
