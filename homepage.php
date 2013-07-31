@@ -54,6 +54,7 @@ Template Name: Homepage
 		</li>
 		<?php endwhile; ?>
 		<?php wp_reset_query(); ?>
+		<div class="clear"></div>
 	</ul>
 </section>
 
