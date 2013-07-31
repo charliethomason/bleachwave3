@@ -865,6 +865,7 @@ h2.home-head a:hover:after {
 
 #education-box {
 	background-color:#fff;
+	padding:20px 2.4%;
 }
 
 #education-box ul {
@@ -875,6 +876,7 @@ h2.home-head a:hover:after {
 
 #education-box li {
 	display:inline-block;
+	vertical-align: top;
 	width:33%;
 }
 
