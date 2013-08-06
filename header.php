@@ -10,7 +10,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); ?>
 <!--[if lt IE 8]>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/ie.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/ie.css">
 <![endif]-->
 <!--[if lt IE 9]>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>

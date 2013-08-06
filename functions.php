@@ -1,7 +1,7 @@
 <?php
 // Add CSS files
 function bleachwave_add_styles() {
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_style( 'lightbox-style', get_template_directory_uri() . '/inc/lightbox/css/jquery.fancybox.css' );
 }
 add_action( 'wp_enqueue_scripts', 'bleachwave_add_styles' );
