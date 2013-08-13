@@ -11,7 +11,7 @@ Template Name: Homepage
 	</a>
 	<section class="intro">
 		<div class="introcontent">
-			<h1>Charlie Thomason is a Web Developer, Designer, and Artist from Chicago</h1>
+			<h1>Charlie Thomason is a Web Developer, Artist, and Photographer from Chicago</h1>
 			<p>He is currently an Associate Presentation Layer Engineer at <a href="http://www.razorfish.com" target="_blank">Razorfish</a> and specializes in CSS3, jQuery, responsive design, and WordPress.</p>
 			<p>Charlie published his first photography book, <a href="http://www.blurb.com/b/2868673-open-range" target="_blank"><em>Open Range: From Monument Valley to the Mojave Desert</em></a> in January 2012, and has had paintings, drawings, and photographs featured in numerous exhibitions.</p>
 			<div>
@@ -45,7 +45,7 @@ Template Name: Homepage
 			$count++;
 		?>
 		<li class="art-cell" id="art-cell-<?=$count;?>">
-			<a class="art-cell-img" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+			<a class="art-cell-img" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
 			<div class="art-cell-meta">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong><br><em><?=$medium?></em></p>
@@ -59,10 +59,11 @@ Template Name: Homepage
 </section>
 
 <section id="home-blog" class="home-section">
-	<h2 class="home-head"><a href="/blog"> Blog </a></h2>
+	<h2 class="home-head"><a href="/news"> News &amp; Events </a></h2>
 	<div class="blog blog-home">
 		<div class="blog-nav-wrap">
 			 <?php get_search_form(); ?> 
+			<?php /*
 			<nav class="blog-nav blog-nav-menu">
 				<span id="blog-cat-menu">
 					<a href="javascript:void(0)" class="btn green-btn">Categories</a>
@@ -71,6 +72,7 @@ Template Name: Homepage
 					</ul>
 				</span>
 			</nav>
+			*/ ?>
 			<div class="clear"></div>
 		</div>
 
@@ -80,18 +82,23 @@ Template Name: Homepage
 				$count = 1;
 			?>
 	        <?php while(have_posts()) : the_post(); ?>
-			<article id="home-blog-<?=$count++;?>" class="post">
+			<article class="post">
 		        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-				<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong> &#8226; <?php the_category(', '); ?></p>
+				<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong></p>
 				<?php
 					global $more;
 					$more = 0;
 				?>
-				<div class="entry">
-					<?php the_content('Continue Reading'); ?>
-				</div>
+				<?php if ($count == 1): ?>
+					<div class="entry">
+						<?php the_content('Continue Reading'); ?>
+					</div>
+				<?php endif; ?>
 			</article>
-			<?php endwhile; ?>
+			<?php 
+				$count++;
+				endwhile; 
+			?>
 			<?php wp_reset_query(); ?>
 		</div>
 	</div>

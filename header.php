@@ -40,34 +40,24 @@
 					}
 					?> id="charlie"><a href="/about">About</a></li>
 				<li<?php
-					if (is_home() || is_singular('post') || is_category() || is_tag())
-					{
-					echo " class=\"active\"";
-					}
-					?>><a href="/blog">Blog</a>
-					<ul>
-						<?php wp_list_categories('orderby=name&use_desc_for_title=0&title_li='); ?>
-					</ul></li>
-				<?php
-				/*<li<?php
-					if (is_page_template('webdev.php') || is_singular('webdev'))
-					{
-					echo " class=\"active\"";
-					}
-					?>><a href="/web">Web<span> Design</span></a></li>
-				*/ ?>
-				<li<?php
 					if (is_page_template('gallery.php') || is_singular('gallery'))
 					{
 					echo " class=\"active\"";
 					}
 					?>><a href="/galleries">Gallery</span></a></li>
-				<li id="nav-store"><a href="http://society6.com/cthomason" rel="nofollow" title="links to Society6.com" target="_blank">Store</a></li>
+				<?php /*
+				<li<?php
+					if (is_home() || is_singular('post') || is_category() || is_tag())
+					{
+					echo " class=\"active\"";
+					}
+					?>><a href="/news">News</a></li>
+				*/ ?>
+				<li id="nav-store"><a href="http://society6.com/cthomason" rel="nofollow" target="_blank">Store</a></li>
 			</ul>
 			<ul class="nav-social">
 				<li class="nav-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Twitter</span></a></li>
 				<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank"><span>Flickr</span></a></li>
-				<?php /*<li class="nav-vimeo"><a href="http://vimeo.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Vimeo</span></a></li>*/ ?>
 				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
 				<li class="nav-vsco"><a href="http://bleachwave.vsco.co" rel="nofollow" class="contact-btn" target="_blank"><span>VSCO Grid</span></a></li>
 			</ul>

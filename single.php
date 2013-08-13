@@ -9,7 +9,7 @@
 				<?php the_post_thumbnail('large'); ?>
 			</div>
        		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-			<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong> &#8226; <?php the_category(', '); ?></p>
+			<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong></p>
            
 			<div class="entry">  
 				<?php the_content(); ?>
