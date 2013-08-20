@@ -11,7 +11,7 @@ function create_gallery() {
        	'hierarchical' => false,
        	'rewrite' => true,
        	'taxonomies' => array('post_tag','category'),
-       	'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'post-formats')
+       	'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
        );
    	register_post_type('gallery',$gallery_args);
 }

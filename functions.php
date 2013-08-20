@@ -49,12 +49,6 @@ remove_action( 'wp_head', 'wp_generator' ); // Display the XHTML generator that 
 if ( function_exists( 'register_sidebar' ) )
     register_sidebar();
 
-// Add Gallery Post Format Theme Support
-add_theme_support( 'post-formats', array( 'gallery' ) );
-
-// Add Post Type Support for Posts and Galleries
-add_post_type_support( 'gallery', 'post-formats' );
-
 //Portfolio Custom Post Type Functions
 require_once( 'functions-gallery.php' );
 

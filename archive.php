@@ -2,25 +2,23 @@
  
 	<div class="blog archive-blog<?php if (is_category()) { ?> category-blog<?php } ?>">
 
-		<div class="blog-nav-wrap">
-			 <?php get_search_form(); ?> 
-			<nav class="blog-nav">
-				<span id="blog-cat-menu">
-					<a href="javascript:void(0)" class="btn green-btn">
-						<?php if (is_category()) { ?>Category: <?php single_cat_title(); ?>
-						<?php } else { ?>Categories<?php } ?></a>
-					<ul class="blog-menu">
-						<?php wp_list_categories('orderby=name&title_li='); ?>
-					</ul>
-				</span>
-			</nav>
-			<div class="clear"></div>
-		</div>    
+	<div class="nav-wrap">
+		 <?php get_search_form(); ?> 
+		<nav class="search-nav">
+			<span id="search-nav-menu">
+				<a href="javascript:void(0)" class="btn green-btn">Categories</a>
+				<ul class="blog-menu">
+					<?php wp_list_categories('orderby=name&title_li='); ?>
+				</ul>
+			</span>
+		</nav>
+		<div class="clear"></div>
+	</div>   
 		
 		<div class="blog-posts">
 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 			<?php /* If this is a category archive */ if (is_category()) { ?>
-				<h2 class="archivetitle">Archive for the &#8216;<span id="category-title"><?php single_cat_title(); ?></span>&#8217; Category:</h2>
+				<h2 class="archivetitle"><span id="category-title"><?php single_cat_title(); ?></span></h2>
 			<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
 				<h2 class="archivetitle">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
 			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>

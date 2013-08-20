@@ -44,7 +44,10 @@
 					{
 					echo " class=\"active\"";
 					}
-					?>><a href="/galleries">Gallery</span></a></li>
+					?>><a href="/art">Gallery</a>
+					<ul>
+						<?php wp_list_categories('orderby=name&title_li='); ?>
+					</ul></li>
 				<?php /*
 				<li<?php
 					if (is_home() || is_singular('post') || is_category() || is_tag())
@@ -57,9 +60,10 @@
 			</ul>
 			<ul class="nav-social">
 				<li class="nav-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Twitter</span></a></li>
+				<li class="nav-medium"><a href="http://medium.com/@CharlieThomason" class="contact-btn" rel="nofollow" target="_blank"><span>Medium</span></a></li>
 				<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank"><span>Flickr</span></a></li>
-				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
 				<li class="nav-vsco"><a href="http://bleachwave.vsco.co" rel="nofollow" class="contact-btn" target="_blank"><span>VSCO Grid</span></a></li>
+				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>

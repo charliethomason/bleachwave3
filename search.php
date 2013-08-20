@@ -2,18 +2,18 @@
  
     <div class="blog">
 
-    	<div class="blog-nav-wrap">
-			 <?php get_search_form(); ?> 
-			<nav class="blog-nav">
-				<span id="blog-cat-menu">
-					<a href="javascript:void(0)" class="btn green-btn">Categories</a>
-					<ul class="blog-menu">
-						<?php wp_list_categories('orderby=name&title_li='); ?>
-					</ul>
-				</span>
-			</nav>
-			<div class="clear"></div>
-		</div>
+	<div class="nav-wrap">
+		 <?php get_search_form(); ?> 
+		<nav class="search-nav">
+			<span id="search-nav-menu">
+				<a href="javascript:void(0)" class="btn green-btn">Categories</a>
+				<ul class="blog-menu">
+					<?php wp_list_categories('orderby=name&title_li='); ?>
+				</ul>
+			</span>
+		</nav>
+		<div class="clear"></div>
+	</div>
 
 		<div class="blog-posts">
         <?php if(have_posts()) : ?>

@@ -3,10 +3,10 @@
 
     	<h1 class="index-head">News &amp; Events</h1>
 	
-		<div class="blog-nav-wrap">
-			 <?php get_search_form(); ?> 
-			<nav class="blog-nav">
-				<span id="blog-cat-menu">
+		<div class="nav-wrap">
+			<?php get_search_form(); ?> 
+			<nav class="search-nav">
+				<span id="search-nav-menu">
 					<a href="javascript:void(0)" class="btn green-btn">Categories</a>
 					<ul class="blog-menu">
 						<?php wp_list_categories('orderby=name&title_li='); ?>

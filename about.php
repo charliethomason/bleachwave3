@@ -26,6 +26,7 @@ Template Name: About Page
 		<?php wp_reset_query(); ?>
 
 	</section>
+</div>
 
 	<section id="about-skills" class="home-section about-section">
 		<h2 class="home-head about-head"><a href="javascript:void(0)"> Web Development Skills </a></h2>
@@ -105,6 +106,5 @@ Template Name: About Page
 			<div class="fact">I was a vegetarian for 5 years. It started by wanting to get healthier and ended because bacon.</div>
 		</div>
 	</section>
-</div>
 
 <?php get_footer(); ?>
