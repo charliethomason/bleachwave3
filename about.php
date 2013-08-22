@@ -6,14 +6,14 @@ Template Name: About Page
 <?php get_header(); ?>
 
 <div class="about-intro">
-	<section class="intro">
+	<section class="blog">
 
 		<?php if(have_posts()) : ?>
 		<?php while(have_posts()) : the_post(); ?>
 
 				<h1><?php the_title(); ?></h1>
 
-				<div class="introcontent">
+				<div class="entry introcontent">
 
 					<?php the_content(); ?>
 

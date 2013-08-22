@@ -8,12 +8,6 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
-	// Clicking anywhere in art cell container takes you to post URL
-	// $(".art-cell").click(function() {
-	// 	var artUrl = $(this).find("a.art-cell-img").attr("href");
-	// 	window.open(artUrl, "_self");
-	// });
-
 	// Add All Posts link to blog menu
 	$("ul.blog-menu").prepend("<li><a href='/art'>All Posts</a></li>");
 
@@ -22,21 +16,25 @@ $(document).ready(function() {
 		var categoryTitle = $("#category-title").text();
 		$(".blog-menu a:contains('" + categoryTitle + "')").addClass("current-cat");
 	}
+	$(".info").click(function(e) {
+		e.preventDefault();
+		var linkSrc = $(this).prev("a.thumb").attr("href");
+		window.open(linkSrc, "_self");
+	});
 
 	// Initiate jQuery Masonry for About page
 	if(typeof($.fn.masonry) != "undefined") {
 		$("#facts-box").masonry({
 			itemSelector : '.fact',
-			// set columnWidth a fraction of the container width
-			columnWidth: function( containerWidth ) {
-				return containerWidth / 4;
-			}
+			columnWidth: 225,
+			gutter:20
 		});
-		var $container = $("#gallery-item-wrap");
+		var $container = $("#art-item-wrap");
 		$container.imagesLoaded(function() {
 			$container.masonry({
 				itemSelector: '.art-item',
-				columnWidth: 1
+				columnWidth: 300,
+				gutter:15
 			});
 		});
 	}

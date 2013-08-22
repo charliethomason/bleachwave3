@@ -21,7 +21,7 @@ Template Name: Gallery
 		<div class="clear"></div>
 	</div>
 
-	<div id="gallery-item-wrap">
+	<div id="art-item-wrap">
 
 		<?php 
 		  $temp = $wp_query; 
@@ -44,7 +44,6 @@ Template Name: Gallery
 				<?php if($medium != "") { ?>
 					<p class="catdate"><strong>Medium:</strong> <?=$medium?></p>
 				<?php } ?>
-				<p class="excerpt"><?php echo(get_the_excerpt()); ?></p>
 				<p><a class="btn" href="<?php the_permalink(); ?>">More Info</a></p>
 
 			</div>
