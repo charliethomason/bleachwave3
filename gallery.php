@@ -35,6 +35,8 @@ Template Name: Gallery
 			$custom = get_post_custom($post->ID);
 			$medium = $custom["medium"][0];
 			$print = $custom["print"][0];
+			$thumb_id = get_post_thumbnail_id();
+			$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
 		?>
 
 		<div id="gallery-item-<?php the_ID(); ?>" class="art-item">
@@ -44,7 +46,9 @@ Template Name: Gallery
 				<?php if($medium != "") { ?>
 					<p class="catdate"><strong>Medium:</strong> <?=$medium?></p>
 				<?php } ?>
-				<p><a class="btn" href="<?php the_permalink(); ?>">More Info</a></p>
+				<p><a class="btn" href="<?php the_permalink(); ?>">More Info</a> 
+					<a class="btn enlarge-btn" href="<?php echo $thumb_url[0]; ?>">Enlarge</a>
+				</p>
 
 			</div>
 			<div class="clear"></div>

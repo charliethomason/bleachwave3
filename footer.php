@@ -1,6 +1,6 @@
 </div><!-- div#container -->
 
-<footer>Copyright &copy; 2013 Bleachwave.com<br>
+<footer>Copyright &copy; <?php echo date('Y'); ?> Bleachwave.com. All Rights Reserved.<br>
 	Website created by <a href="http://bleachwave.com">Charlie Thomason</a>
 </footer>
 

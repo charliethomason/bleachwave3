@@ -21,6 +21,17 @@ $(document).ready(function() {
 		var linkSrc = $(this).prev("a.thumb").attr("href");
 		window.open(linkSrc, "_self");
 	});
+	$(".enlarge-btn").click(function(e) {
+		e.preventDefault();
+        $.fancybox(this,{
+            'transitionIn'  :   'elastic',
+            'transitionOut' :   'elastic',
+            'speedIn'           :   600, 
+            'speedOut'          :   200, 
+            'overlayShow'   :   true
+        });
+        return false;
+	});
 
 	// Initiate jQuery Masonry for About page
 	if(typeof($.fn.masonry) != "undefined") {
