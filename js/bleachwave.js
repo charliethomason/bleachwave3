@@ -14,7 +14,9 @@ $(document).ready(function() {
 	// Add "current-cat" class to currently-viewed category on category pages
 	if($("div.blog").hasClass("category-blog")) {
 		var categoryTitle = $("#category-title").text();
-		$(".blog-menu a:contains('" + categoryTitle + "')").addClass("current-cat");
+		var categoryLink = $("a:contains('" + categoryTitle + "')");
+		$(".blog-menu").find(categoryLink).addClass("current-cat");
+		$(".main-sub-nav").find(categoryLink).addClass("current-cat");
 	}
 	$(".info").click(function(e) {
 		e.preventDefault();

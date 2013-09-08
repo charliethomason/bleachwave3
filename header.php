@@ -45,7 +45,8 @@
 					echo " class=\"active\"";
 					}
 					?>><a href="/art">Gallery</a>
-					<ul>
+					<ul class="main-sub-nav">
+						<li class="cat-item"><a href="/art">All Posts</a></li>
 						<?php wp_list_categories('orderby=name&title_li='); ?>
 					</ul></li>
 				<?php /*
