@@ -6,7 +6,7 @@
 		 <?php get_search_form(); ?> 
 		<nav class="search-nav">
 			<span id="search-nav-menu">
-				<a href="javascript:void(0)" class="btn green-btn">Categories</a>
+				<a href="javascript:void(0)" class="btn secondary-btn cat-btn">Categories</a>
 				<ul class="blog-menu">
 					<?php wp_list_categories('orderby=name&title_li='); ?>
 				</ul>
@@ -27,10 +27,8 @@
 		<p class="catdate"><?php the_time('D, M j, Y'); ?> &#8226; <?php the_category(', '); ?></p>
             
 			<div class="entry">  
-					<div class="alignleft">
-						<?php the_post_thumbnail('medium'); ?>
-					</div>
-	                <?php the_excerpt(); ?>
+				<div class="aligncenter"><?php the_post_thumbnail('medium'); ?></div>
+                <?php the_excerpt(); ?>
             </div><!-- div.entry -->
  
     	</article><!-- article.post -->

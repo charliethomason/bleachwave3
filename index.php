@@ -7,7 +7,7 @@
 			<?php get_search_form(); ?> 
 			<nav class="search-nav">
 				<span id="search-nav-menu">
-					<a href="javascript:void(0)" class="btn green-btn">Categories</a>
+					<a href="javascript:void(0)" class="btn secondary-btn cat-btn">Categories</a>
 					<ul class="blog-menu">
 						<?php wp_list_categories('orderby=name&title_li='); ?>
 					</ul>

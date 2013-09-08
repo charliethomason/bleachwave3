@@ -12,7 +12,7 @@ Template Name: Gallery
 		 <?php get_search_form(); ?> 
 		<nav class="search-nav">
 			<span id="search-nav-menu">
-				<a href="javascript:void(0)" class="btn green-btn">Categories</a>
+				<a href="javascript:void(0)" class="btn secondary-btn cat-btn">Categories</a>
 				<ul class="blog-menu">
 					<?php wp_list_categories('orderby=name&title_li='); ?>
 				</ul>
@@ -47,7 +47,7 @@ Template Name: Gallery
 					<p class="catdate"><strong>Medium:</strong> <?=$medium?></p>
 				<?php } ?>
 				<p><a class="btn" href="<?php the_permalink(); ?>">More Info</a> 
-					<a class="btn enlarge-btn" href="<?php echo $thumb_url[0]; ?>">Enlarge</a>
+					<a class="btn secondary-btn" href="<?php echo $thumb_url[0]; ?>">Enlarge</a>
 				</p>
 
 			</div>

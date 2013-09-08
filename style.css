@@ -159,14 +159,14 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	border-color: #253B06;
 	border-radius: 6px 6px 6px 6px;
 	border-style: solid;
-	border-width: 4px 1px 1px;
+	border-width: 1px 1px 4px;
 	color: #FFFFFF;
 	display: inline-block;
 	font-family: "Fjalla One","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-	font-size: 1.25em;
+	font-size: 1.125em;
 	margin-top: 20px;
 	padding: 10px 20px;
-	text-shadow: 0 2px 1px #000000;
+	text-shadow: 0 2px 0px #000000;
 	text-transform: uppercase;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -182,14 +182,54 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	box-shadow: 0 2px 4px #222222;
 }
 
-.btn.enlarge-btn {
+.btn.home-btn {
+	font-size:1.25em;
+}
+
+.btn.secondary-btn {
 	background-color:#999;
 	border-color:#000;
 }
 
-.btn.enlarge-btn:hover {
+.btn.secondary-btn:hover {
 	background-color:#333;
 	border-color:#fff;
+}
+
+.btn.search-btn {
+	background:url("images/search02.png") no-repeat scroll center center #539313;
+	border-radius:0 6px 6px 0;
+	cursor:pointer;
+	font-size:0;
+	height:31px;
+	line-height:0;
+	margin:0 0 0 -4px;
+	overflow:hidden;
+	padding:0;
+	text-indent:100%;
+	vertical-align: top;
+	white-space:nowrap;
+	width:30px;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+.btn.secondary-btn.cat-btn {
+	margin-top:0;
+	padding:7px 20px;
+	position:relative;
+}
+
+input {
+	border: 1px solid #253B06;
+	border-radius:6px 0 0 6px;
+	display:inline-block;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+	padding: 2px;
+	width:200px;
 }
 
 /* END Global */
@@ -779,7 +819,8 @@ article.post h6 {
 }
 
 .archivetitle {
-	color:#999;
+	color:#539313;
+	margin-bottom:10px;
 }
 
 .catdate {
@@ -807,7 +848,7 @@ div.entry p {
 	padding:10px 0;
 }
 
-article.post div.entry > p:first-of-type:first-letter { 
+.single-blog article.post div.entry > p:first-of-type:first-letter { 
 	float: left; 
 	color: #539313; 
 	font-size: 5em;  
@@ -949,7 +990,8 @@ h1.index-head {
 	transition:background-color 0.6s ease-out;
 }
 
-.art-item:hover .info {
+.art-item:hover .info,
+.art-item:focus .info {
 	background-color:rgba(255,255,255,0.6);
 	left:0;
 	top:0;
@@ -959,20 +1001,18 @@ h1.index-head {
 	font-size:1.25em;
 	line-height:1em;
 	margin:0 0 5px;
-	text-align:left;
 }
 
 .info h2 a {
-	color:#539313;
+	color:#253B06;
 }
 
 .info h2 a:hover {
-	color:#666;
+	color:#539313;
 }
 
-.excerpt {
-	line-height:1.5em;
-	margin:0 0 10px;
+.info .catdate {
+	color:#666;
 }
 
 /* END: Gallery Styles */
@@ -1046,45 +1086,10 @@ aside.details-box li:first-child {
 	display:inline-block;
 }
 
-input#s {
-	border: 1px solid #253B06;
-	border-radius:4px;
-	display:inline-block;
-	font-size: 16px;
-	height: 30px;
-	line-height: 30px;
-	margin: 0;
-	padding: 2px;
-	width:200px;
-}
-
-#searchsubmit {
-	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:16px;
-	margin:-3px 0 0;
-	padding:6px 5px;
-	width:100px;
-}
-
-#searchimage {
-	display:none;
-	margin:-4px 0 0;
-	padding:7px;
-}
-
 .search-nav {
 	display:inline-block;
 	margin:0 0 0 2.1%;
 	position:relative;
-}
-
-#search-nav-menu > a.btn {
-	display:block;
-	font-size:16px;
-	height:24px;
-	line-height:24px;
-	margin:0 auto;
-	width:160px;
 }
 
 .blog-menu {

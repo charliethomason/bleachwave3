@@ -21,7 +21,7 @@ $(document).ready(function() {
 		var linkSrc = $(this).prev("a.thumb").attr("href");
 		window.open(linkSrc, "_self");
 	});
-	$(".enlarge-btn").click(function(e) {
+	$(".secondary-btn").click(function(e) {
 		e.preventDefault();
         $.fancybox(this,{
             'transitionIn'  :   'elastic',
