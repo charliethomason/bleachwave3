@@ -1,6 +1,6 @@
 <?php get_header(); ?>
  
-	<div class="blog archive-blog<?php if (is_category() && is_tag()) { ?> blog-gallery<?php } elseif (is_category()) { ?> blog-gallery category-blog<?php } ?>">
+<div class="blog archive-blog<?php if (is_category() || is_tag()) { ?> blog-gallery category-blog<?php } ?>">
 
 	<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 	<?php /* If this is a category archive */ if (is_category()) { ?>
@@ -86,12 +86,19 @@
 		 
 			<?php endwhile; ?>
 
+			<div class="sizer">&nbsp;</div>
+		</div><!--div#art-item-wrap-->
+</div><!--div.blog-->
+
 			<div class="navigation">
 				<div class="alignleft"><?php previous_posts_link('&laquo; Back') ?></div>
 				<div class="alignright"><?php next_posts_link('Next &raquo;') ?></div>
 			</div>
 
 			<?php else : ?>
+
+		</div><!--div.blog-posts-->
+</div><!--div.blog-->
 
 			<article class="post">
 				<div class="entry">
@@ -101,8 +108,7 @@
 			</article>
  
 			<?php endif; ?>
-		</div><!--div.blog-posts-->
-</div><!--div.blog-->
+		
  
    
 <?php get_footer(); ?>

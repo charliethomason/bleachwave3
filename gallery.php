@@ -28,6 +28,7 @@ Template Name: Gallery
 		  $wp_query = null; 
 		  $wp_query = new WP_Query(); 
 		  $wp_query->query('showposts=20&post_type=gallery'.'&paged='.$paged); 
+		  $count = 1;
 
 		  while ($wp_query->have_posts()) : $wp_query->the_post(); 
 		?>
@@ -39,7 +40,7 @@ Template Name: Gallery
 			$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
 		?>
 
-		<div id="gallery-item-<?php the_ID(); ?>" class="art-item">
+		<div id="art-item-<?php echo $count; ?>" class="art-item">
 			<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?> </a>
 			<div class="info">
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -53,17 +54,21 @@ Template Name: Gallery
 			</div>
 			<div class="clear"></div>
 		</div>
-		<?php endwhile; ?> 
-		<div class="navigation">
-		    <div class="prev-post"><?php previous_posts_link('&laquo; Newer') ?></div>
-		    <div class="next-post"><?php next_posts_link('Older &raquo;') ?></div>
-		</div>
 		<?php 
-		  $wp_query = null; 
-		  $wp_query = $temp;  // Reset
+			$count++;
+			endwhile; 
 		?>
-
+		<div class="sizer">&nbsp;</div>
 	</div>
+	<div class="navigation">
+	    <div class="prev-post"><?php previous_posts_link('&laquo; Newer') ?></div>
+	    <div class="next-post"><?php next_posts_link('Older &raquo;') ?></div>
+	</div>
+	<?php 
+	  $wp_query = null; 
+	  $wp_query = $temp;  // Reset
+	?>
+	
 	
 	<div class="clear"></div> 
 </div><!--.blog.blog-gallery-->

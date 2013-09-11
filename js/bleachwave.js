@@ -45,9 +45,8 @@ $(document).ready(function() {
 		var $container = $("#art-item-wrap");
 		$container.imagesLoaded(function() {
 			$container.masonry({
-				itemSelector: '.art-item',
-				columnWidth: 300,
-				gutter:15
+				columnWidth: '.art-item',
+				gutter: '.sizer'
 			});
 		});
 	}

@@ -344,7 +344,7 @@ ul.main-nav a {
 	font-family:"Fjalla One", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size:18px;
 	padding:24px 16px;
-	text-shadow:0 2px 1px #000;
+	text-shadow:0 2px 0 #000;
 	text-transform:uppercase;
 }
 
@@ -1015,6 +1015,10 @@ h1.index-head {
 	color:#666;
 }
 
+.sizer {
+	width:15px;
+}
+
 /* END: Gallery Styles */
 
 /******************/
@@ -1212,3 +1216,60 @@ footer a:hover {
 /* END Footer */
 
 /**********************/
+
+/* BEGIN Responsive Features */
+
+@media screen and (max-width:960px){
+	.blog-gallery {
+		max-width:800px;
+	}
+	.art-item {
+		margin-bottom:5px;
+		width:250px;
+	}
+	.sizer {
+		width:5px;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.blog-gallery {
+		max-width:650px;
+	}
+	.art-item {
+		margin-bottom:15px;
+		width:300px;
+	}
+	.sizer {
+		width:15px;
+	}
+}
+
+@media screen and (max-width:650px) {
+	.blog-gallery {
+		max-width:550px;
+	}
+	.art-item {
+		width:250px;
+	}
+	.sizer {
+		width:5px;
+	}
+}
+
+@media screen and (max-width:550px) {
+	.blog-gallery {
+		max-width:332px;
+	}
+	#art-item-wrap {
+		margin-right:15px;
+	}
+	.art-item {
+		width:100%;
+	}
+	.sizer {
+		width:0;
+	}
+}
+
+/* END Responsive Features */
