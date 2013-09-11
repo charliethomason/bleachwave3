@@ -12,7 +12,8 @@ $(document).ready(function() {
 	$("ul.blog-menu").prepend("<li><a href='/art'>All Posts</a></li>");
 
 	// Add "current-cat" class to currently-viewed category on category pages
-	if($("div.blog").hasClass("category-blog")) {
+	var currentUrl = window.location.pathname.split('/');
+	if(currentUrl[1] == "category") {
 		var categoryTitle = $("#category-title").text();
 		var categoryLink = $("a:contains('" + categoryTitle + "')");
 		$(".blog-menu").find(categoryLink).addClass("current-cat");

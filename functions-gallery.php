@@ -86,13 +86,4 @@ function gallery_edit_columns($gallery_columns){
 	);
 	return $gallery_columns;
 }
-//  
-// function gallery_columns_display($gallery_columns){
-// 	switch ($gallery_columns)
-// 	{
-// 		case "description":
-// 			the_excerpt();
-// 			break;				
-// 	}
-// }
 ?>
