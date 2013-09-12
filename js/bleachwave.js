@@ -43,6 +43,12 @@ $(document).ready(function() {
 		e.preventDefault();
 		$("ul.nav-social").slideToggle(700);
 	});
+	var $prevLink = $('a[rel="prev"]');
+	var $nextLink = $('a[rel="next"]');
+	if($prevLink.length || $nextLink.length) {
+		$prevLink.addClass("btn secondary-btn");
+		$nextLink.addClass("btn secondary-btn");
+	}
 	// If Masonry exists
 	if(typeof($.fn.masonry) != "undefined") {
 		// Masonry for About page
