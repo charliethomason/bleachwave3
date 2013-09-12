@@ -21,7 +21,10 @@
 <header id="header">
 	
 	<h1>
-		<a class="hidetext" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+		<a id="logo" class="hidetext" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+		<a id="mobile-logo" class="hidetext" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
+			<img src="<?php bloginfo('template_directory'); ?>/images/bw-logo05_600.png" alt="Bleachwave logo">
+		</a>
 	</h1>
 	<h2><?php bloginfo('description'); ?></h2>
 	
@@ -60,12 +63,16 @@
 				<li id="nav-store"><a href="http://society6.com/cthomason" rel="nofollow" target="_blank">Store</a></li>
 			</ul>
 			<ul class="nav-social">
+				<li class="mobile-nav-btn"><a href="/about" class="contact-btn">About</a></li>
+				<li class="mobile-nav-btn"><a href="/art" class="contact-btn">Gallery</a></li>
+				<li class="mobile-nav-btn"><a href="http://society6.com/cthomason" class="contact-btn" rel="nofollow" target="_blank">Store</a></li>
 				<li class="nav-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Twitter</span></a></li>
 				<li class="nav-medium"><a href="http://medium.com/@CharlieThomason" class="contact-btn" rel="nofollow" target="_blank"><span>Medium</span></a></li>
 				<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank"><span>Flickr</span></a></li>
 				<li class="nav-vsco"><a href="http://bleachwave.vsco.co" rel="nofollow" class="contact-btn" target="_blank"><span>VSCO Grid</span></a></li>
 				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
 			</ul>
+			<a href="#" id="hamburger">Menu</a>
 			<div class="clear"></div>
 		</div>
 	</nav>

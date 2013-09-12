@@ -38,7 +38,11 @@ $(document).ready(function() {
         });
         return false;
 	});
-
+	// Clicking hamburger on mobile triggers nav-social
+	$("#hamburger").click(function(e) {
+		e.preventDefault();
+		$("ul.nav-social").slideToggle(700);
+	});
 	// If Masonry exists
 	if(typeof($.fn.masonry) != "undefined") {
 		// Masonry for About page
