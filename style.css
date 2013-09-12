@@ -1296,7 +1296,7 @@ footer a:hover {
 @media screen and (max-width:650px) {
 	#nav {
 		left:0;
-		position:absolute;
+		position:fixed;
 		top:0;
 	}
 	#header h1 {
@@ -1315,6 +1315,7 @@ footer a:hover {
 		max-width:550px;
 	}
 	.art-item {
+		margin-bottom:5px;
 		width:250px;
 	}
 	.sizer {
@@ -1456,6 +1457,14 @@ footer a:hover {
 	#skills-box .skills-column.second {
 		float:none;
 		width:90%;
+	}
+	.art-blog .entry {
+		float:none;
+		width:auto;
+	}
+	aside.details-box {
+		float:none;
+		width:auto;
 	}
 }
 
