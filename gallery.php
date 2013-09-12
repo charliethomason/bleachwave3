@@ -48,7 +48,7 @@ Template Name: Gallery
 					<p class="catdate"><strong>Medium:</strong> <?=$medium?></p>
 				<?php } ?>
 				<p><a class="btn" href="<?php the_permalink(); ?>">More Info</a> 
-					<a class="btn secondary-btn" href="<?php echo $thumb_url[0]; ?>">Enlarge</a>
+					<a class="btn secondary-btn enlarge-btn" href="<?php echo $thumb_url[0]; ?>">Enlarge</a>
 				</p>
 
 			</div>

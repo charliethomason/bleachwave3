@@ -1,5 +1,6 @@
 var $ = jQuery.noConflict();
 
+// Remove width and height from art-item img
 $(window).load(function() {
 	$(".thumb > img").each(function(){
 		$(this).removeAttr("width").removeAttr("height");
@@ -19,12 +20,14 @@ $(document).ready(function() {
 		$(".blog-menu").find(categoryLink).addClass("current-cat");
 		$(".main-sub-nav").find(categoryLink).addClass("current-cat");
 	}
+	// Clicking anywhere on art-item opens link to gallery post
 	$(".info").click(function(e) {
 		e.preventDefault();
 		var linkSrc = $(this).prev("a.thumb").attr("href");
 		window.open(linkSrc, "_self");
 	});
-	$(".secondary-btn").click(function(e) {
+	// Enlarge button on gallery pages triggers fancybox
+	$(".enlarge-btn").click(function(e) {
 		e.preventDefault();
         $.fancybox(this,{
             'transitionIn'  :   'elastic',
@@ -36,13 +39,15 @@ $(document).ready(function() {
         return false;
 	});
 
-	// Initiate jQuery Masonry for About page
+	// If Masonry exists
 	if(typeof($.fn.masonry) != "undefined") {
+		// Masonry for About page
 		$("#facts-box").masonry({
 			itemSelector : '.fact',
 			columnWidth: 225,
 			gutter:20
 		});
+		// Masonry for Gallery & Archive pages
 		var $container = $("#art-item-wrap");
 		$container.imagesLoaded(function() {
 			$container.masonry({
