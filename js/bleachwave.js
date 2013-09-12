@@ -47,9 +47,8 @@ $(document).ready(function() {
 	if(typeof($.fn.masonry) != "undefined") {
 		// Masonry for About page
 		$("#facts-box").masonry({
-			itemSelector : '.fact',
-			columnWidth: 225,
-			gutter:20
+			columnWidth: '.fact',
+			gutter: '.sizer'
 		});
 		// Masonry for Gallery & Archive pages
 		var $container = $("#art-item-wrap");

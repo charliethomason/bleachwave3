@@ -104,6 +104,7 @@ Template Name: About Page
 			<div class="fact">I am afraid of praying mantises, moths, and accidentally ingesting soap.</div>
 			<div class="fact">I don't eat or drink anything with high fructose corn syrup or MSG.</div>
 			<div class="fact">I was a vegetarian for 5 years. It started by wanting to get healthier and ended because bacon.</div>
+			<div class="sizer">&nbsp;</div>
 		</div>
 	</section>
 

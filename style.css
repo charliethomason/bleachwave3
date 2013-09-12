@@ -793,7 +793,7 @@ h2.home-head a:hover:after {
 	color:#000;
 	float:left;
 	line-height:1.5em;
-	margin:10px 0;
+	margin:0 0 15px;
 	padding:10px 1%;
 	width:225px;
 	-moz-box-sizing:border-box;
@@ -1255,6 +1255,13 @@ footer a:hover {
 	.sizer {
 		width:5px;
 	}
+	#facts-box {
+		max-width:800px;
+	}
+	.fact {
+		margin-bottom:5px;
+		width:250px;
+	}
 }
 
 @media screen and (max-width:800px) {
@@ -1276,6 +1283,13 @@ footer a:hover {
 	.about-intro .introcontent {
 		padding:20px 0;
 		width:90%;
+	}
+	#facts-box {
+		max-width:635px;
+	}
+	.fact {
+		margin-bottom:15px;
+		width:200px;
 	}
 }
 
@@ -1305,6 +1319,13 @@ footer a:hover {
 	}
 	.sizer {
 		width:5px;
+	}
+	#facts-box {
+		max-width:465px;
+	}
+	.fact {
+		margin-bottom:5px;
+		width:225px;
 	}
 	#hamburger {
 		display:block;
@@ -1418,6 +1439,12 @@ footer a:hover {
 	}
 	.sizer {
 		width:0;
+	}
+	#facts-box {
+		max-width:320px;
+	}
+	.fact {
+		width:320px;
 	}
 	.search-nav {
 		margin-top:20px;
