@@ -1268,6 +1268,15 @@ footer a:hover {
 	.sizer {
 		width:15px;
 	}
+	.btn.home-btn {
+		display:block;
+		text-align:center;
+		width:150px;
+	}
+	.about-intro .introcontent {
+		padding:20px 0;
+		width:90%;
+	}
 }
 
 @media screen and (max-width:650px) {
@@ -1354,9 +1363,50 @@ footer a:hover {
 	.nav-wrap {
 		width:90%;
 	}
+	.intro-image {
+		background-image: none;
+	}
+	#mobile-portrait {
+		display:block;
+	}
+	.intro {
+		padding:20px 2% 40px;
+	}
+	.introcontent {
+		float:none;
+		margin:10px auto 0;
+		width:90%;
+	}
+	.intro-image h1 {
+		color:#539313;
+		text-align:center;
+		text-shadow:none;
+	}
+	.btn.home-btn {
+		display:inline-block;
+		width:auto;
+	}
+	.about-intro .introcontent h2 {
+		clear:both;
+		margin-bottom:0;
+	}
+	.about-intro .post-image img {
+		float:none;
+		margin:0 auto;
+	}
+	#education-box li {
+		display:block;
+		margin:0 0 20px;
+		width:100%;
+	}
 }
 
 @media screen and (max-width:550px) {
+	#header h2 {
+		font-size:1.25em;
+		line-height:1.5em;
+		margin-top:0;
+	}
 	.blog-gallery {
 		max-width:332px;
 	}
@@ -1374,6 +1424,11 @@ footer a:hover {
 	}
 	.btn.secondary-btn.cat-btn {
 		font-size:1.5em;
+	}
+	#skills-box .skills-column,
+	#skills-box .skills-column.second {
+		float:none;
+		width:90%;
 	}
 }
 
